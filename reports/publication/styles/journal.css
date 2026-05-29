@@ -1,0 +1,560 @@
+/* FMS Strategic Review — Journal Publication Stylesheet */
+/* Volume 1, Issue 1 (2026) | Editor: Dr. Fatih Sayin */
+
+:root {
+  --navy: #1a2744;
+  --charcoal: #2d3748;
+  --slate: #4a5568;
+  --gold: #b8860b;
+  --gold-light: #f5f0e6;
+  --cream: #faf9f7;
+  --paper: #ffffff;
+  --briefing-hos: #eef2f8;
+  --briefing-fm: #f0f4ef;
+  --briefing-un: #eef0f8;
+  --briefing-regional: #f8f4ee;
+  --border-hos: #1a2744;
+  --border-fm: #2d5a2d;
+  --border-un: #3d5a80;
+  --border-regional: #8b6914;
+  --serif: "Palatino Linotype", Palatino, "Book Antiqua", Georgia, "Times New Roman", serif;
+  --sans: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --body-size: 11.5pt;
+  --line-height: 1.55;
+  --measure: 42rem;
+  --margin-note-width: 11rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+body.journal-body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--serif);
+  font-size: var(--body-size);
+  line-height: var(--line-height);
+  color: var(--charcoal);
+  background: var(--cream);
+  counter-reset: page;
+}
+
+/* Running headers / footers */
+.running-header,
+.running-footer {
+  display: none;
+}
+
+@page {
+  size: letter;
+  margin: 0.85in 0.9in 1in 1.1in;
+
+  @top-left {
+    content: "FMS Strategic Review";
+    font-family: var(--sans);
+    font-size: 8pt;
+    color: var(--slate);
+  }
+
+  @top-center {
+    content: "Vol. 1, Iss. 1 (2026)";
+    font-family: var(--sans);
+    font-size: 8pt;
+    color: var(--slate);
+  }
+
+  @top-right {
+    content: "Sayin (Ed.)";
+    font-family: var(--sans);
+    font-size: 8pt;
+    color: var(--slate);
+  }
+
+  @bottom-left {
+    content: "Building Peace Through Intelligence, Diplomacy, and Human Dignity";
+    font-family: var(--sans);
+    font-size: 7pt;
+    color: var(--slate);
+  }
+
+  @bottom-right {
+    content: counter(page);
+    font-family: var(--sans);
+    font-size: 9pt;
+  }
+}
+
+/* Article layout */
+.journal-article {
+  max-width: 52rem;
+  margin: 0 auto;
+  padding: 2rem 2.5rem 4rem;
+  background: var(--paper);
+  box-shadow: 0 0 24px rgba(26, 39, 68, 0.06);
+}
+
+/* Cover page */
+.cover-page {
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem 2rem;
+  page-break-after: always;
+  border-bottom: 4px solid var(--navy);
+}
+
+.series-brand {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--navy);
+  margin: 0 0 0.5rem;
+  font-weight: 700;
+}
+
+.volume-issue {
+  font-family: var(--sans);
+  font-size: 1rem;
+  color: var(--gold);
+  font-style: italic;
+  margin: 0 0 2rem;
+}
+
+.cover-rule {
+  width: 40%;
+  margin: 1.5rem auto;
+  border: none;
+  border-top: 1px solid var(--gold);
+}
+
+.cover-title {
+  font-family: var(--serif);
+  font-size: 1.85rem;
+  font-weight: 400;
+  color: var(--navy);
+  line-height: 1.25;
+  margin: 0 0 1rem;
+  max-width: 36rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cover-subtitle {
+  font-size: 1.05rem;
+  font-style: italic;
+  color: var(--slate);
+  max-width: 32rem;
+  margin: 0 auto 2rem;
+  line-height: 1.45;
+}
+
+.cover-meta {
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  margin: 0.35rem 0;
+  color: var(--charcoal);
+}
+
+.cover-citation {
+  font-size: 0.8rem;
+  color: var(--slate);
+  margin-top: 2rem;
+  max-width: 28rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Editorial */
+.editorial-note {
+  max-width: var(--measure);
+  margin: 0 auto 3rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.editorial-note h2 {
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1.25rem;
+}
+
+.editorial-sig {
+  margin-top: 1.5rem;
+}
+
+/* Table of contents */
+.toc {
+  page-break-after: always;
+  padding: 2rem 0 3rem;
+  max-width: var(--measure);
+  margin: 0 auto;
+}
+
+.toc h2 {
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--navy);
+  border-bottom: 2px solid var(--navy);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.toc ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  columns: 1;
+}
+
+.toc li {
+  margin: 0.35rem 0;
+  font-family: var(--sans);
+  font-size: 0.95rem;
+}
+
+.toc a {
+  color: var(--navy);
+  text-decoration: none;
+  border-bottom: 1px dotted transparent;
+}
+
+.toc a:hover {
+  border-bottom-color: var(--gold);
+}
+
+.toc-chapter a {
+  font-weight: 600;
+}
+
+/* Main content */
+.journal-main {
+  max-width: calc(var(--measure) + var(--margin-note-width) + 2rem);
+  margin: 0 auto;
+}
+
+.chapter-title {
+  font-family: var(--sans);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 2.5rem 0 1rem;
+  padding-top: 0.5rem;
+  border-top: 3px solid var(--navy);
+  page-break-after: avoid;
+}
+
+.section-title {
+  font-family: var(--sans);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin: 1.75rem 0 0.75rem;
+  page-break-after: avoid;
+}
+
+h3.section-title,
+h4.section-title {
+  font-size: 0.95rem;
+  color: var(--charcoal);
+}
+
+p {
+  margin: 0 0 1rem;
+  text-align: justify;
+  hyphens: auto;
+}
+
+ul,
+ol {
+  margin: 0 0 1rem 1.25rem;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 0.35rem;
+}
+
+blockquote {
+  margin: 1rem 0 1rem 1.5rem;
+  padding: 0.5rem 0 0.5rem 1rem;
+  border-left: 3px solid var(--gold);
+  color: var(--slate);
+  font-style: italic;
+}
+
+code {
+  font-family: "Consolas", "Courier New", monospace;
+  font-size: 0.88em;
+  background: #f0f0f0;
+  padding: 0.1em 0.35em;
+  border-radius: 2px;
+}
+
+hr.section-break {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 2rem 0;
+}
+
+/* Executive briefing boxes */
+.executive-briefing {
+  margin: 1.25rem 0 1.75rem;
+  padding: 1.25rem 1.5rem;
+  border-radius: 2px;
+  page-break-inside: avoid;
+}
+
+.briefing-label {
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.briefing-hos {
+  background: var(--briefing-hos);
+  border-left: 5px solid var(--border-hos);
+}
+
+.briefing-hos .briefing-label {
+  color: var(--border-hos);
+}
+
+.briefing-fm {
+  background: var(--briefing-fm);
+  border-left: 5px solid var(--border-fm);
+}
+
+.briefing-fm .briefing-label {
+  color: var(--border-fm);
+}
+
+.briefing-un {
+  background: var(--briefing-un);
+  border-left: 5px solid var(--border-un);
+}
+
+.briefing-un .briefing-label {
+  color: var(--border-un);
+}
+
+.briefing-regional {
+  background: var(--briefing-regional);
+  border-left: 5px solid var(--border-regional);
+}
+
+.briefing-regional .briefing-label {
+  color: var(--border-regional);
+}
+
+/* Tables */
+.table-wrap {
+  overflow-x: auto;
+  margin: 1.5rem 0 2rem;
+  page-break-inside: avoid;
+}
+
+.table-caption {
+  caption-side: top;
+  text-align: left;
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--navy);
+  padding: 0 0 0.5rem;
+}
+
+.journal-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
+.journal-table th {
+  background: var(--navy);
+  color: #fff;
+  font-weight: 600;
+  text-align: left;
+  padding: 0.55rem 0.65rem;
+  vertical-align: top;
+}
+
+.journal-table td {
+  padding: 0.5rem 0.65rem;
+  border-bottom: 1px solid #e2e8f0;
+  vertical-align: top;
+}
+
+.journal-table tbody tr:nth-child(even) {
+  background: #f8f9fb;
+}
+
+/* Figures */
+.journal-figure {
+  margin: 2rem 0;
+  page-break-inside: avoid;
+  clear: both;
+}
+
+.journal-figure svg {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #e2e8f0;
+  background: var(--cream);
+}
+
+.journal-figure figcaption {
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  color: var(--slate);
+  margin-top: 0.65rem;
+  line-height: 1.45;
+  text-align: left;
+}
+
+.figure-label {
+  font-weight: 700;
+  color: var(--navy);
+}
+
+/* Margin notes — visual recommendations */
+.margin-note {
+  float: right;
+  clear: right;
+  width: var(--margin-note-width);
+  margin: 0 -13rem 1rem 1.5rem;
+  padding: 0.65rem 0.75rem;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  line-height: 1.4;
+  color: var(--slate);
+  background: var(--gold-light);
+  border: 1px dashed var(--gold);
+  border-radius: 2px;
+}
+
+.margin-label {
+  display: block;
+  font-weight: 700;
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.35rem;
+}
+
+/* References — APA 7 hanging indent */
+#sec-16-references ~ p {
+  margin-left: 0;
+  padding-left: 2.5rem;
+  text-indent: -2.5rem;
+  font-size: 0.9rem;
+  text-align: left;
+  hyphens: none;
+  margin-bottom: 0.65rem;
+}
+
+#sec-16-references ~ hr.section-break {
+  display: none;
+}
+
+/* Page breaks */
+.page-break-before {
+  page-break-before: always;
+}
+
+.page-break-after {
+  page-break-after: always;
+}
+
+/* Print */
+@media print {
+  body.journal-body {
+    background: #fff;
+  }
+
+  .journal-article {
+    max-width: none;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .cover-page {
+    min-height: auto;
+    height: 100vh;
+  }
+
+  .margin-note {
+    float: none;
+    width: auto;
+    margin: 1rem 0;
+    page-break-inside: avoid;
+  }
+
+  .toc {
+    page-break-after: always;
+  }
+
+  .chapter-title {
+    page-break-before: always;
+  }
+
+  .chapter-title:first-of-type {
+    page-break-before: auto;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .journal-figure svg {
+    max-height: 280px;
+  }
+}
+
+/* Responsive — collapse margin notes */
+@media screen and (max-width: 900px) {
+  .journal-main {
+    max-width: var(--measure);
+  }
+
+  .margin-note {
+    float: none;
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .journal-article {
+    padding: 1rem;
+  }
+}
+
+@media screen {
+  .running-header,
+  .running-footer {
+    display: none;
+  }
+}

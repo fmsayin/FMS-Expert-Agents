@@ -1,0 +1,11 @@
+<svg viewBox="0 0 640 400" role="img" aria-labelledby="fig3-title fig3-desc">
+<title id="fig3-title">Scenario probability matrix</title>
+<desc id="fig3-desc">Matrix showing Geneva Consensus 15-20%, Fragmented Progress 50-55%, Algorithmic Bloc Rivalry 20-25%, Synthetic Casus Belli 5-8%.</desc>
+<rect width="640" height="400" fill="#faf9f7"/>
+<text x="320" y="28" text-anchor="middle" font-size="13" fill="#1a2744">Policy Scenario Probabilities (Illustrative)</text>
+<rect x="80" y="60" width="220" height="70" fill="#e8f0e8" stroke="#2d5a2d"/><text x="190" y="90" text-anchor="middle" font-size="12" fill="#1a2744">Geneva Consensus</text><text x="190" y="115" text-anchor="middle" font-size="14" font-weight="bold">15–20%</text>
+<rect x="340" y="60" width="220" height="70" fill="#eef2f8" stroke="#1a2744"/><text x="450" y="90" text-anchor="middle" font-size="12">Fragmented Progress</text><text x="450" y="115" text-anchor="middle" font-size="14" font-weight="bold">50–55%</text>
+<rect x="80" y="160" width="220" height="70" fill="#fde8e8" stroke="#8b2942"/><text x="190" y="190" text-anchor="middle" font-size="12">Algorithmic Bloc Rivalry</text><text x="190" y="215" text-anchor="middle" font-size="14" font-weight="bold">20–25%</text>
+<rect x="340" y="160" width="220" height="70" fill="#2a1a1a" stroke="#000"/><text x="450" y="190" text-anchor="middle" font-size="12" fill="#fff">Synthetic Casus Belli</text><text x="450" y="215" text-anchor="middle" font-size="14" font-weight="bold" fill="#f5d76e">5–8%</text>
+<text x="320" y="320" text-anchor="middle" font-size="10" fill="#4a5568">Default trajectory without GDAIC: Fragmented Progress</text>
+</svg>

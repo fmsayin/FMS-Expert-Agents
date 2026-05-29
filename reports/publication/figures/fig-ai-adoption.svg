@@ -1,0 +1,13 @@
+<svg viewBox="0 0 640 320" role="img" aria-labelledby="fig4-title fig4-desc">
+<title id="fig4-title">AI adoption in diplomacy projection</title>
+<desc id="fig4-desc">Two lines showing G7 diplomatic AI adoption reaching 85% by 2050 and UN member states with GDAIC-aligned systems reaching 65%.</desc>
+<rect width="640" height="320" fill="#faf9f7"/>
+<text x="320" y="24" text-anchor="middle" font-size="13" fill="#1a2744">Diplomatic AI Adoption (% FM Crisis Monitoring)</text>
+<line x1="60" y1="260" x2="580" y2="260" stroke="#4a5568"/>
+<line x1="60" y1="260" x2="60" y2="50" stroke="#4a5568"/>
+<text x="120" y="278" font-size="9">2030</text><text x="280" y="278" font-size="9">2040</text><text x="440" y="278" font-size="9">2050</text>
+<polyline fill="none" stroke="#1a2744" stroke-width="2" points="120,220 280,160 440,100"/>
+<polyline fill="none" stroke="#b8860b" stroke-width="2" stroke-dasharray="6,4" points="120,240 280,200 440,140"/>
+<text x="450" y="105" font-size="10" fill="#1a2744">G7+ FMs</text>
+<text x="450" y="145" font-size="10" fill="#b8860b">GDAIC-aligned states</text>
+</svg>

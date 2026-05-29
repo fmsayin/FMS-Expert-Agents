@@ -1,0 +1,1634 @@
+{
+  "sessionId": "02f55c7c-afc1-44b6-bd0f-ab76963d53f8",
+  "topic": "How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?",
+  "phase": "complete",
+  "llmMode": "mock",
+  "agentsEnabled": [
+    "chief_peace_architect",
+    "peace_conflict",
+    "diplomacy_ir",
+    "strategic_security",
+    "humanitarian",
+    "ai_peace",
+    "economic_dev",
+    "civilization_culture",
+    "education_youth",
+    "media_comms",
+    "environmental_security",
+    "space_future",
+    "ethics_rights"
+  ],
+  "rounds": 3,
+  "analyses": [
+    {
+      "agentId": "chief_peace_architect",
+      "executiveSummary": "[mock] Chief Peace Architect analysis on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\".",
+      "keyFindings": [
+        {
+          "id": "chief_peace_architect-f1",
+          "text": "Key finding from Chief Peace Architect"
+        }
+      ],
+      "recommendations": [
+        {
+          "id": "chief_peace_architect-r1",
+          "text": "Recommendation from Chief Peace Architect",
+          "priority": "high"
+        }
+      ],
+      "risks": [
+        {
+          "id": "chief_peace_architect-risk1",
+          "description": "Mock implementation risk",
+          "severity": "medium"
+        }
+      ],
+      "assumptions": [
+        "Mock mode — no live LLM call"
+      ],
+      "questionsForDebate": [
+        "How should Chief Peace Architect engage other experts?"
+      ],
+      "citations": [],
+      "usage": {
+        "prompt": 10,
+        "completion": 20
+      }
+    },
+    {
+      "agentId": "peace_conflict",
+      "executiveSummary": "[mock] Peace & Conflict Resolution analysis on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\".",
+      "keyFindings": [
+        {
+          "id": "peace_conflict-f1",
+          "text": "Key finding from Peace & Conflict Resolution"
+        }
+      ],
+      "recommendations": [
+        {
+          "id": "peace_conflict-r1",
+          "text": "Recommendation from Peace & Conflict Resolution",
+          "priority": "high"
+        }
+      ],
+      "risks": [
+        {
+          "id": "peace_conflict-risk1",
+          "description": "Mock implementation risk",
+          "severity": "medium"
+        }
+      ],
+      "assumptions": [
+        "Mock mode — no live LLM call"
+      ],
+      "questionsForDebate": [
+        "How should Peace & Conflict Resolution engage other experts?"
+      ],
+      "citations": [],
+      "usage": {
+        "prompt": 10,
+        "completion": 20
+      }
+    },
+    {
+      "agentId": "diplomacy_ir",
+      "executiveSummary": "[mock] Diplomacy & International Relations analysis on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\".",
+      "keyFindings": [
+        {
+          "id": "diplomacy_ir-f1",
+          "text": "Key finding from Diplomacy & International Relations"
+        }
+      ],
+      "recommendations": [
+        {
+          "id": "diplomacy_ir-r1",
+          "text": "Recommendation from Diplomacy & International Relations",
+          "priority": "high"
+        }
+      ],
+      "risks": [
+        {
+          "id": "diplomacy_ir-risk1",
+          "description": "Mock implementation risk",
+          "severity": "medium"
+        }
+      ],
+      "assumptions": [
+        "Mock mode — no live LLM call"
+      ],
+      "questionsForDebate": [
+        "How should Diplomacy & International Relations engage other experts?"
+      ],
+      "citations": [],
+      "usage": {
+        "prompt": 10,
+        "completion": 20
+      }
+    },
+    {
+      "agentId": "strategic_security",
+      "executiveSummary": "[mock] Strategic & Security Studies analysis on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\".",
+      "keyFindings": [
+        {
+          "id": "strategic_security-f1",
+          "text": "Key finding from Strategic & Security Studies"
+        }
+      ],
+      "recommendations": [
+        {
+          "id": "strategic_security-r1",
+          "text": "Recommendation from Strategic & Security Studies",
+          "priority": "high"
+        }
+      ],
+      "risks": [
+        {
+          "id": "strategic_security-risk1",
+          "description": "Mock implementation risk",
+          "severity": "medium"
+        }
+      ],
+      "assumptions": [
+        "Mock mode — no live LLM call"
+      ],
+      "questionsForDebate": [
+        "How should Strategic & Security Studies engage other experts?"
+      ],
+      "citations": [],
+      "usage": {
+        "prompt": 10,
+        "completion": 20
+      }
+    },
+    {
+      "agentId": "humanitarian",
+      "executiveSummary": "[mock] Humanitarian Affairs analysis on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\".",
+      "keyFindings": [
+        {
+          "id": "humanitarian-f1",
+          "text": "Key finding from Humanitarian Affairs"
+        }
+      ],
+      "recommendations": [
+        {
+          "id": "humanitarian-r1",
+          "text": "Recommendation from Humanitarian Affairs",
+          "priority": "high"
+        }
+      ],
+      "risks": [
+        {
+          "id": "humanitarian-risk1",
+          "description": "Mock implementation risk",
+          "severity": "medium"
+        }
+      ],
+      "assumptions": [
+        "Mock mode — no live LLM call"
+      ],
+      "questionsForDebate": [
+        "How should Humanitarian Affairs engage other experts?"
+      ],
+      "citations": [],
+      "usage": {
+        "prompt": 10,
+        "completion": 20
+      }
+    },
+    {
+      "agentId": "ai_peace",
+      "executiveSummary": "[mock] AI for Peace analysis on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\".",
+      "keyFindings": [
+        {
+          "id": "ai_peace-f1",
+          "text": "Key finding from AI for Peace"
+        }
+      ],
+      "recommendations": [
+        {
+          "id": "ai_peace-r1",
+          "text": "Recommendation from AI for Peace",
+          "priority": "high"
+        }
+      ],
+      "risks": [
+        {
+          "id": "ai_peace-risk1",
+          "description": "Mock implementation risk",
+          "severity": "medium"
+        }
+      ],
+      "assumptions": [
+        "Mock mode — no live LLM call"
+      ],
+      "questionsForDebate": [
+        "How should AI for Peace engage other experts?"
+      ],
+      "citations": [],
+      "usage": {
+        "prompt": 10,
+        "completion": 20
+      }
+    },
+    {
+      "agentId": "economic_dev",
+      "executiveSummary": "[mock] Economic Development analysis on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\".",
+      "keyFindings": [
+        {
+          "id": "economic_dev-f1",
+          "text": "Key finding from Economic Development"
+        }
+      ],
+      "recommendations": [
+        {
+          "id": "economic_dev-r1",
+          "text": "Recommendation from Economic Development",
+          "priority": "high"
+        }
+      ],
+      "risks": [
+        {
+          "id": "economic_dev-risk1",
+          "description": "Mock implementation risk",
+          "severity": "medium"
+        }
+      ],
+      "assumptions": [
+        "Mock mode — no live LLM call"
+      ],
+      "questionsForDebate": [
+        "How should Economic Development engage other experts?"
+      ],
+      "citations": [],
+      "usage": {
+        "prompt": 10,
+        "completion": 20
+      }
+    },
+    {
+      "agentId": "civilization_culture",
+      "executiveSummary": "[mock] Civilization & Cultural Dialogue analysis on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\".",
+      "keyFindings": [
+        {
+          "id": "civilization_culture-f1",
+          "text": "Key finding from Civilization & Cultural Dialogue"
+        }
+      ],
+      "recommendations": [
+        {
+          "id": "civilization_culture-r1",
+          "text": "Recommendation from Civilization & Cultural Dialogue",
+          "priority": "high"
+        }
+      ],
+      "risks": [
+        {
+          "id": "civilization_culture-risk1",
+          "description": "Mock implementation risk",
+          "severity": "medium"
+        }
+      ],
+      "assumptions": [
+        "Mock mode — no live LLM call"
+      ],
+      "questionsForDebate": [
+        "How should Civilization & Cultural Dialogue engage other experts?"
+      ],
+      "citations": [],
+      "usage": {
+        "prompt": 10,
+        "completion": 20
+      }
+    },
+    {
+      "agentId": "education_youth",
+      "executiveSummary": "[mock] Education & Youth Empowerment analysis on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\".",
+      "keyFindings": [
+        {
+          "id": "education_youth-f1",
+          "text": "Key finding from Education & Youth Empowerment"
+        }
+      ],
+      "recommendations": [
+        {
+          "id": "education_youth-r1",
+          "text": "Recommendation from Education & Youth Empowerment",
+          "priority": "high"
+        }
+      ],
+      "risks": [
+        {
+          "id": "education_youth-risk1",
+          "description": "Mock implementation risk",
+          "severity": "medium"
+        }
+      ],
+      "assumptions": [
+        "Mock mode — no live LLM call"
+      ],
+      "questionsForDebate": [
+        "How should Education & Youth Empowerment engage other experts?"
+      ],
+      "citations": [],
+      "usage": {
+        "prompt": 10,
+        "completion": 20
+      }
+    },
+    {
+      "agentId": "media_comms",
+      "executiveSummary": "[mock] Media & Strategic Communication analysis on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\".",
+      "keyFindings": [
+        {
+          "id": "media_comms-f1",
+          "text": "Key finding from Media & Strategic Communication"
+        }
+      ],
+      "recommendations": [
+        {
+          "id": "media_comms-r1",
+          "text": "Recommendation from Media & Strategic Communication",
+          "priority": "high"
+        }
+      ],
+      "risks": [
+        {
+          "id": "media_comms-risk1",
+          "description": "Mock implementation risk",
+          "severity": "medium"
+        }
+      ],
+      "assumptions": [
+        "Mock mode — no live LLM call"
+      ],
+      "questionsForDebate": [
+        "How should Media & Strategic Communication engage other experts?"
+      ],
+      "citations": [],
+      "usage": {
+        "prompt": 10,
+        "completion": 20
+      }
+    },
+    {
+      "agentId": "environmental_security",
+      "executiveSummary": "[mock] Environmental Security analysis on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\".",
+      "keyFindings": [
+        {
+          "id": "environmental_security-f1",
+          "text": "Key finding from Environmental Security"
+        }
+      ],
+      "recommendations": [
+        {
+          "id": "environmental_security-r1",
+          "text": "Recommendation from Environmental Security",
+          "priority": "high"
+        }
+      ],
+      "risks": [
+        {
+          "id": "environmental_security-risk1",
+          "description": "Mock implementation risk",
+          "severity": "medium"
+        }
+      ],
+      "assumptions": [
+        "Mock mode — no live LLM call"
+      ],
+      "questionsForDebate": [
+        "How should Environmental Security engage other experts?"
+      ],
+      "citations": [],
+      "usage": {
+        "prompt": 10,
+        "completion": 20
+      }
+    },
+    {
+      "agentId": "space_future",
+      "executiveSummary": "[mock] Space & Future Policy analysis on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\".",
+      "keyFindings": [
+        {
+          "id": "space_future-f1",
+          "text": "Key finding from Space & Future Policy"
+        }
+      ],
+      "recommendations": [
+        {
+          "id": "space_future-r1",
+          "text": "Recommendation from Space & Future Policy",
+          "priority": "high"
+        }
+      ],
+      "risks": [
+        {
+          "id": "space_future-risk1",
+          "description": "Mock implementation risk",
+          "severity": "medium"
+        }
+      ],
+      "assumptions": [
+        "Mock mode — no live LLM call"
+      ],
+      "questionsForDebate": [
+        "How should Space & Future Policy engage other experts?"
+      ],
+      "citations": [],
+      "usage": {
+        "prompt": 10,
+        "completion": 20
+      }
+    },
+    {
+      "agentId": "ethics_rights",
+      "executiveSummary": "[mock] Ethics, Human Rights & Global Governance analysis on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\".",
+      "keyFindings": [
+        {
+          "id": "ethics_rights-f1",
+          "text": "Key finding from Ethics, Human Rights & Global Governance"
+        }
+      ],
+      "recommendations": [
+        {
+          "id": "ethics_rights-r1",
+          "text": "Recommendation from Ethics, Human Rights & Global Governance",
+          "priority": "high"
+        }
+      ],
+      "risks": [
+        {
+          "id": "ethics_rights-risk1",
+          "description": "Mock implementation risk",
+          "severity": "medium"
+        }
+      ],
+      "assumptions": [
+        "Mock mode — no live LLM call"
+      ],
+      "questionsForDebate": [
+        "How should Ethics, Human Rights & Global Governance engage other experts?"
+      ],
+      "citations": [],
+      "usage": {
+        "prompt": 10,
+        "completion": 20
+      }
+    }
+  ],
+  "independentAnalyses": {
+    "chief_peace_architect": {
+      "agentId": "chief_peace_architect",
+      "executiveSummary": "[mock] Chief Peace Architect analysis on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\".",
+      "keyFindings": [
+        {
+          "id": "chief_peace_architect-f1",
+          "text": "Key finding from Chief Peace Architect"
+        }
+      ],
+      "recommendations": [
+        {
+          "id": "chief_peace_architect-r1",
+          "text": "Recommendation from Chief Peace Architect",
+          "priority": "high"
+        }
+      ],
+      "risks": [
+        {
+          "id": "chief_peace_architect-risk1",
+          "description": "Mock implementation risk",
+          "severity": "medium"
+        }
+      ],
+      "assumptions": [
+        "Mock mode — no live LLM call"
+      ],
+      "questionsForDebate": [
+        "How should Chief Peace Architect engage other experts?"
+      ],
+      "citations": [],
+      "usage": {
+        "prompt": 10,
+        "completion": 20
+      }
+    },
+    "peace_conflict": {
+      "agentId": "peace_conflict",
+      "executiveSummary": "[mock] Peace & Conflict Resolution analysis on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\".",
+      "keyFindings": [
+        {
+          "id": "peace_conflict-f1",
+          "text": "Key finding from Peace & Conflict Resolution"
+        }
+      ],
+      "recommendations": [
+        {
+          "id": "peace_conflict-r1",
+          "text": "Recommendation from Peace & Conflict Resolution",
+          "priority": "high"
+        }
+      ],
+      "risks": [
+        {
+          "id": "peace_conflict-risk1",
+          "description": "Mock implementation risk",
+          "severity": "medium"
+        }
+      ],
+      "assumptions": [
+        "Mock mode — no live LLM call"
+      ],
+      "questionsForDebate": [
+        "How should Peace & Conflict Resolution engage other experts?"
+      ],
+      "citations": [],
+      "usage": {
+        "prompt": 10,
+        "completion": 20
+      }
+    },
+    "diplomacy_ir": {
+      "agentId": "diplomacy_ir",
+      "executiveSummary": "[mock] Diplomacy & International Relations analysis on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\".",
+      "keyFindings": [
+        {
+          "id": "diplomacy_ir-f1",
+          "text": "Key finding from Diplomacy & International Relations"
+        }
+      ],
+      "recommendations": [
+        {
+          "id": "diplomacy_ir-r1",
+          "text": "Recommendation from Diplomacy & International Relations",
+          "priority": "high"
+        }
+      ],
+      "risks": [
+        {
+          "id": "diplomacy_ir-risk1",
+          "description": "Mock implementation risk",
+          "severity": "medium"
+        }
+      ],
+      "assumptions": [
+        "Mock mode — no live LLM call"
+      ],
+      "questionsForDebate": [
+        "How should Diplomacy & International Relations engage other experts?"
+      ],
+      "citations": [],
+      "usage": {
+        "prompt": 10,
+        "completion": 20
+      }
+    },
+    "strategic_security": {
+      "agentId": "strategic_security",
+      "executiveSummary": "[mock] Strategic & Security Studies analysis on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\".",
+      "keyFindings": [
+        {
+          "id": "strategic_security-f1",
+          "text": "Key finding from Strategic & Security Studies"
+        }
+      ],
+      "recommendations": [
+        {
+          "id": "strategic_security-r1",
+          "text": "Recommendation from Strategic & Security Studies",
+          "priority": "high"
+        }
+      ],
+      "risks": [
+        {
+          "id": "strategic_security-risk1",
+          "description": "Mock implementation risk",
+          "severity": "medium"
+        }
+      ],
+      "assumptions": [
+        "Mock mode — no live LLM call"
+      ],
+      "questionsForDebate": [
+        "How should Strategic & Security Studies engage other experts?"
+      ],
+      "citations": [],
+      "usage": {
+        "prompt": 10,
+        "completion": 20
+      }
+    },
+    "humanitarian": {
+      "agentId": "humanitarian",
+      "executiveSummary": "[mock] Humanitarian Affairs analysis on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\".",
+      "keyFindings": [
+        {
+          "id": "humanitarian-f1",
+          "text": "Key finding from Humanitarian Affairs"
+        }
+      ],
+      "recommendations": [
+        {
+          "id": "humanitarian-r1",
+          "text": "Recommendation from Humanitarian Affairs",
+          "priority": "high"
+        }
+      ],
+      "risks": [
+        {
+          "id": "humanitarian-risk1",
+          "description": "Mock implementation risk",
+          "severity": "medium"
+        }
+      ],
+      "assumptions": [
+        "Mock mode — no live LLM call"
+      ],
+      "questionsForDebate": [
+        "How should Humanitarian Affairs engage other experts?"
+      ],
+      "citations": [],
+      "usage": {
+        "prompt": 10,
+        "completion": 20
+      }
+    },
+    "ai_peace": {
+      "agentId": "ai_peace",
+      "executiveSummary": "[mock] AI for Peace analysis on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\".",
+      "keyFindings": [
+        {
+          "id": "ai_peace-f1",
+          "text": "Key finding from AI for Peace"
+        }
+      ],
+      "recommendations": [
+        {
+          "id": "ai_peace-r1",
+          "text": "Recommendation from AI for Peace",
+          "priority": "high"
+        }
+      ],
+      "risks": [
+        {
+          "id": "ai_peace-risk1",
+          "description": "Mock implementation risk",
+          "severity": "medium"
+        }
+      ],
+      "assumptions": [
+        "Mock mode — no live LLM call"
+      ],
+      "questionsForDebate": [
+        "How should AI for Peace engage other experts?"
+      ],
+      "citations": [],
+      "usage": {
+        "prompt": 10,
+        "completion": 20
+      }
+    },
+    "economic_dev": {
+      "agentId": "economic_dev",
+      "executiveSummary": "[mock] Economic Development analysis on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\".",
+      "keyFindings": [
+        {
+          "id": "economic_dev-f1",
+          "text": "Key finding from Economic Development"
+        }
+      ],
+      "recommendations": [
+        {
+          "id": "economic_dev-r1",
+          "text": "Recommendation from Economic Development",
+          "priority": "high"
+        }
+      ],
+      "risks": [
+        {
+          "id": "economic_dev-risk1",
+          "description": "Mock implementation risk",
+          "severity": "medium"
+        }
+      ],
+      "assumptions": [
+        "Mock mode — no live LLM call"
+      ],
+      "questionsForDebate": [
+        "How should Economic Development engage other experts?"
+      ],
+      "citations": [],
+      "usage": {
+        "prompt": 10,
+        "completion": 20
+      }
+    },
+    "civilization_culture": {
+      "agentId": "civilization_culture",
+      "executiveSummary": "[mock] Civilization & Cultural Dialogue analysis on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\".",
+      "keyFindings": [
+        {
+          "id": "civilization_culture-f1",
+          "text": "Key finding from Civilization & Cultural Dialogue"
+        }
+      ],
+      "recommendations": [
+        {
+          "id": "civilization_culture-r1",
+          "text": "Recommendation from Civilization & Cultural Dialogue",
+          "priority": "high"
+        }
+      ],
+      "risks": [
+        {
+          "id": "civilization_culture-risk1",
+          "description": "Mock implementation risk",
+          "severity": "medium"
+        }
+      ],
+      "assumptions": [
+        "Mock mode — no live LLM call"
+      ],
+      "questionsForDebate": [
+        "How should Civilization & Cultural Dialogue engage other experts?"
+      ],
+      "citations": [],
+      "usage": {
+        "prompt": 10,
+        "completion": 20
+      }
+    },
+    "education_youth": {
+      "agentId": "education_youth",
+      "executiveSummary": "[mock] Education & Youth Empowerment analysis on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\".",
+      "keyFindings": [
+        {
+          "id": "education_youth-f1",
+          "text": "Key finding from Education & Youth Empowerment"
+        }
+      ],
+      "recommendations": [
+        {
+          "id": "education_youth-r1",
+          "text": "Recommendation from Education & Youth Empowerment",
+          "priority": "high"
+        }
+      ],
+      "risks": [
+        {
+          "id": "education_youth-risk1",
+          "description": "Mock implementation risk",
+          "severity": "medium"
+        }
+      ],
+      "assumptions": [
+        "Mock mode — no live LLM call"
+      ],
+      "questionsForDebate": [
+        "How should Education & Youth Empowerment engage other experts?"
+      ],
+      "citations": [],
+      "usage": {
+        "prompt": 10,
+        "completion": 20
+      }
+    },
+    "media_comms": {
+      "agentId": "media_comms",
+      "executiveSummary": "[mock] Media & Strategic Communication analysis on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\".",
+      "keyFindings": [
+        {
+          "id": "media_comms-f1",
+          "text": "Key finding from Media & Strategic Communication"
+        }
+      ],
+      "recommendations": [
+        {
+          "id": "media_comms-r1",
+          "text": "Recommendation from Media & Strategic Communication",
+          "priority": "high"
+        }
+      ],
+      "risks": [
+        {
+          "id": "media_comms-risk1",
+          "description": "Mock implementation risk",
+          "severity": "medium"
+        }
+      ],
+      "assumptions": [
+        "Mock mode — no live LLM call"
+      ],
+      "questionsForDebate": [
+        "How should Media & Strategic Communication engage other experts?"
+      ],
+      "citations": [],
+      "usage": {
+        "prompt": 10,
+        "completion": 20
+      }
+    },
+    "environmental_security": {
+      "agentId": "environmental_security",
+      "executiveSummary": "[mock] Environmental Security analysis on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\".",
+      "keyFindings": [
+        {
+          "id": "environmental_security-f1",
+          "text": "Key finding from Environmental Security"
+        }
+      ],
+      "recommendations": [
+        {
+          "id": "environmental_security-r1",
+          "text": "Recommendation from Environmental Security",
+          "priority": "high"
+        }
+      ],
+      "risks": [
+        {
+          "id": "environmental_security-risk1",
+          "description": "Mock implementation risk",
+          "severity": "medium"
+        }
+      ],
+      "assumptions": [
+        "Mock mode — no live LLM call"
+      ],
+      "questionsForDebate": [
+        "How should Environmental Security engage other experts?"
+      ],
+      "citations": [],
+      "usage": {
+        "prompt": 10,
+        "completion": 20
+      }
+    },
+    "space_future": {
+      "agentId": "space_future",
+      "executiveSummary": "[mock] Space & Future Policy analysis on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\".",
+      "keyFindings": [
+        {
+          "id": "space_future-f1",
+          "text": "Key finding from Space & Future Policy"
+        }
+      ],
+      "recommendations": [
+        {
+          "id": "space_future-r1",
+          "text": "Recommendation from Space & Future Policy",
+          "priority": "high"
+        }
+      ],
+      "risks": [
+        {
+          "id": "space_future-risk1",
+          "description": "Mock implementation risk",
+          "severity": "medium"
+        }
+      ],
+      "assumptions": [
+        "Mock mode — no live LLM call"
+      ],
+      "questionsForDebate": [
+        "How should Space & Future Policy engage other experts?"
+      ],
+      "citations": [],
+      "usage": {
+        "prompt": 10,
+        "completion": 20
+      }
+    },
+    "ethics_rights": {
+      "agentId": "ethics_rights",
+      "executiveSummary": "[mock] Ethics, Human Rights & Global Governance analysis on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\".",
+      "keyFindings": [
+        {
+          "id": "ethics_rights-f1",
+          "text": "Key finding from Ethics, Human Rights & Global Governance"
+        }
+      ],
+      "recommendations": [
+        {
+          "id": "ethics_rights-r1",
+          "text": "Recommendation from Ethics, Human Rights & Global Governance",
+          "priority": "high"
+        }
+      ],
+      "risks": [
+        {
+          "id": "ethics_rights-risk1",
+          "description": "Mock implementation risk",
+          "severity": "medium"
+        }
+      ],
+      "assumptions": [
+        "Mock mode — no live LLM call"
+      ],
+      "questionsForDebate": [
+        "How should Ethics, Human Rights & Global Governance engage other experts?"
+      ],
+      "citations": [],
+      "usage": {
+        "prompt": 10,
+        "completion": 20
+      }
+    }
+  },
+  "debateTranscript": [
+    {
+      "agentId": "ai_peace",
+      "round": 1,
+      "content": "[mock] Debate turn by ai_peace on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\" (round 1).",
+      "claimsAddressed": [],
+      "stance": "nuance",
+      "newClaims": [
+        {
+          "id": "ai_peace-c1",
+          "text": "Claim from ai_peace in round 1"
+        }
+      ],
+      "references": []
+    },
+    {
+      "agentId": "civilization_culture",
+      "round": 1,
+      "content": "[mock] Debate turn by civilization_culture on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\" (round 1).",
+      "claimsAddressed": [],
+      "stance": "nuance",
+      "newClaims": [
+        {
+          "id": "civilization_culture-c1",
+          "text": "Claim from civilization_culture in round 1"
+        }
+      ],
+      "references": []
+    },
+    {
+      "agentId": "diplomacy_ir",
+      "round": 1,
+      "content": "[mock] Debate turn by diplomacy_ir on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\" (round 1).",
+      "claimsAddressed": [],
+      "stance": "nuance",
+      "newClaims": [
+        {
+          "id": "diplomacy_ir-c1",
+          "text": "Claim from diplomacy_ir in round 1"
+        }
+      ],
+      "references": []
+    },
+    {
+      "agentId": "economic_dev",
+      "round": 1,
+      "content": "[mock] Debate turn by economic_dev on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\" (round 1).",
+      "claimsAddressed": [],
+      "stance": "nuance",
+      "newClaims": [
+        {
+          "id": "economic_dev-c1",
+          "text": "Claim from economic_dev in round 1"
+        }
+      ],
+      "references": []
+    },
+    {
+      "agentId": "education_youth",
+      "round": 1,
+      "content": "[mock] Debate turn by education_youth on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\" (round 1).",
+      "claimsAddressed": [],
+      "stance": "nuance",
+      "newClaims": [
+        {
+          "id": "education_youth-c1",
+          "text": "Claim from education_youth in round 1"
+        }
+      ],
+      "references": []
+    },
+    {
+      "agentId": "environmental_security",
+      "round": 1,
+      "content": "[mock] Debate turn by environmental_security on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\" (round 1).",
+      "claimsAddressed": [],
+      "stance": "nuance",
+      "newClaims": [
+        {
+          "id": "environmental_security-c1",
+          "text": "Claim from environmental_security in round 1"
+        }
+      ],
+      "references": []
+    },
+    {
+      "agentId": "ethics_rights",
+      "round": 1,
+      "content": "[mock] Debate turn by ethics_rights on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\" (round 1).",
+      "claimsAddressed": [],
+      "stance": "nuance",
+      "newClaims": [
+        {
+          "id": "ethics_rights-c1",
+          "text": "Claim from ethics_rights in round 1"
+        }
+      ],
+      "references": []
+    },
+    {
+      "agentId": "humanitarian",
+      "round": 1,
+      "content": "[mock] Debate turn by humanitarian on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\" (round 1).",
+      "claimsAddressed": [],
+      "stance": "nuance",
+      "newClaims": [
+        {
+          "id": "humanitarian-c1",
+          "text": "Claim from humanitarian in round 1"
+        }
+      ],
+      "references": []
+    },
+    {
+      "agentId": "media_comms",
+      "round": 1,
+      "content": "[mock] Debate turn by media_comms on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\" (round 1).",
+      "claimsAddressed": [],
+      "stance": "nuance",
+      "newClaims": [
+        {
+          "id": "media_comms-c1",
+          "text": "Claim from media_comms in round 1"
+        }
+      ],
+      "references": []
+    },
+    {
+      "agentId": "peace_conflict",
+      "round": 1,
+      "content": "[mock] Debate turn by peace_conflict on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\" (round 1).",
+      "claimsAddressed": [],
+      "stance": "nuance",
+      "newClaims": [
+        {
+          "id": "peace_conflict-c1",
+          "text": "Claim from peace_conflict in round 1"
+        }
+      ],
+      "references": []
+    },
+    {
+      "agentId": "space_future",
+      "round": 1,
+      "content": "[mock] Debate turn by space_future on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\" (round 1).",
+      "claimsAddressed": [],
+      "stance": "nuance",
+      "newClaims": [
+        {
+          "id": "space_future-c1",
+          "text": "Claim from space_future in round 1"
+        }
+      ],
+      "references": []
+    },
+    {
+      "agentId": "strategic_security",
+      "round": 1,
+      "content": "[mock] Debate turn by strategic_security on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\" (round 1).",
+      "claimsAddressed": [],
+      "stance": "nuance",
+      "newClaims": [
+        {
+          "id": "strategic_security-c1",
+          "text": "Claim from strategic_security in round 1"
+        }
+      ],
+      "references": []
+    },
+    {
+      "agentId": "chief_peace_architect",
+      "round": 1,
+      "content": "[mock] Debate turn by chief_peace_architect on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\" (round 1).",
+      "claimsAddressed": [],
+      "stance": "nuance",
+      "newClaims": [
+        {
+          "id": "chief_peace_architect-c1",
+          "text": "Claim from chief_peace_architect in round 1"
+        }
+      ],
+      "references": []
+    },
+    {
+      "agentId": "strategic_security",
+      "round": 2,
+      "content": "[mock] Debate turn by strategic_security on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\" (round 2).",
+      "claimsAddressed": [
+        "chief_peace_architect-c1"
+      ],
+      "stance": "nuance",
+      "newClaims": [
+        {
+          "id": "strategic_security-c2",
+          "text": "Claim from strategic_security in round 2"
+        }
+      ],
+      "references": []
+    },
+    {
+      "agentId": "peace_conflict",
+      "round": 2,
+      "content": "[mock] Debate turn by peace_conflict on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\" (round 2).",
+      "claimsAddressed": [
+        "chief_peace_architect-c1"
+      ],
+      "stance": "nuance",
+      "newClaims": [
+        {
+          "id": "peace_conflict-c2",
+          "text": "Claim from peace_conflict in round 2"
+        }
+      ],
+      "references": []
+    },
+    {
+      "agentId": "diplomacy_ir",
+      "round": 2,
+      "content": "[mock] Debate turn by diplomacy_ir on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\" (round 2).",
+      "claimsAddressed": [
+        "chief_peace_architect-c1"
+      ],
+      "stance": "nuance",
+      "newClaims": [
+        {
+          "id": "diplomacy_ir-c2",
+          "text": "Claim from diplomacy_ir in round 2"
+        }
+      ],
+      "references": []
+    },
+    {
+      "agentId": "economic_dev",
+      "round": 2,
+      "content": "[mock] Debate turn by economic_dev on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\" (round 2).",
+      "claimsAddressed": [
+        "chief_peace_architect-c1"
+      ],
+      "stance": "nuance",
+      "newClaims": [
+        {
+          "id": "economic_dev-c2",
+          "text": "Claim from economic_dev in round 2"
+        }
+      ],
+      "references": []
+    },
+    {
+      "agentId": "humanitarian",
+      "round": 2,
+      "content": "[mock] Debate turn by humanitarian on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\" (round 2).",
+      "claimsAddressed": [
+        "chief_peace_architect-c1"
+      ],
+      "stance": "nuance",
+      "newClaims": [
+        {
+          "id": "humanitarian-c2",
+          "text": "Claim from humanitarian in round 2"
+        }
+      ],
+      "references": []
+    },
+    {
+      "agentId": "ai_peace",
+      "round": 2,
+      "content": "[mock] Debate turn by ai_peace on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\" (round 2).",
+      "claimsAddressed": [
+        "chief_peace_architect-c1"
+      ],
+      "stance": "nuance",
+      "newClaims": [
+        {
+          "id": "ai_peace-c2",
+          "text": "Claim from ai_peace in round 2"
+        }
+      ],
+      "references": []
+    },
+    {
+      "agentId": "media_comms",
+      "round": 2,
+      "content": "[mock] Debate turn by media_comms on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\" (round 2).",
+      "claimsAddressed": [
+        "chief_peace_architect-c1"
+      ],
+      "stance": "nuance",
+      "newClaims": [
+        {
+          "id": "media_comms-c2",
+          "text": "Claim from media_comms in round 2"
+        }
+      ],
+      "references": []
+    },
+    {
+      "agentId": "ethics_rights",
+      "round": 2,
+      "content": "[mock] Debate turn by ethics_rights on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\" (round 2).",
+      "claimsAddressed": [
+        "chief_peace_architect-c1"
+      ],
+      "stance": "nuance",
+      "newClaims": [
+        {
+          "id": "ethics_rights-c2",
+          "text": "Claim from ethics_rights in round 2"
+        }
+      ],
+      "references": []
+    },
+    {
+      "agentId": "chief_peace_architect",
+      "round": 2,
+      "content": "[mock] Debate turn by chief_peace_architect on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\" (round 2).",
+      "claimsAddressed": [
+        "chief_peace_architect-c1"
+      ],
+      "stance": "nuance",
+      "newClaims": [
+        {
+          "id": "chief_peace_architect-c2",
+          "text": "Claim from chief_peace_architect in round 2"
+        }
+      ],
+      "references": []
+    },
+    {
+      "agentId": "environmental_security",
+      "round": 2,
+      "content": "[mock] Debate turn by environmental_security on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\" (round 2).",
+      "claimsAddressed": [
+        "chief_peace_architect-c1"
+      ],
+      "stance": "nuance",
+      "newClaims": [
+        {
+          "id": "environmental_security-c2",
+          "text": "Claim from environmental_security in round 2"
+        }
+      ],
+      "references": []
+    },
+    {
+      "agentId": "strategic_security",
+      "round": 3,
+      "content": "[mock] Debate turn by strategic_security on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\" (round 3).",
+      "claimsAddressed": [
+        "environmental_security-c2"
+      ],
+      "stance": "nuance",
+      "newClaims": [
+        {
+          "id": "strategic_security-c3",
+          "text": "Claim from strategic_security in round 3"
+        }
+      ],
+      "references": []
+    },
+    {
+      "agentId": "peace_conflict",
+      "round": 3,
+      "content": "[mock] Debate turn by peace_conflict on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\" (round 3).",
+      "claimsAddressed": [
+        "environmental_security-c2"
+      ],
+      "stance": "nuance",
+      "newClaims": [
+        {
+          "id": "peace_conflict-c3",
+          "text": "Claim from peace_conflict in round 3"
+        }
+      ],
+      "references": []
+    },
+    {
+      "agentId": "diplomacy_ir",
+      "round": 3,
+      "content": "[mock] Debate turn by diplomacy_ir on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\" (round 3).",
+      "claimsAddressed": [
+        "environmental_security-c2"
+      ],
+      "stance": "nuance",
+      "newClaims": [
+        {
+          "id": "diplomacy_ir-c3",
+          "text": "Claim from diplomacy_ir in round 3"
+        }
+      ],
+      "references": []
+    },
+    {
+      "agentId": "economic_dev",
+      "round": 3,
+      "content": "[mock] Debate turn by economic_dev on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\" (round 3).",
+      "claimsAddressed": [
+        "environmental_security-c2"
+      ],
+      "stance": "nuance",
+      "newClaims": [
+        {
+          "id": "economic_dev-c3",
+          "text": "Claim from economic_dev in round 3"
+        }
+      ],
+      "references": []
+    },
+    {
+      "agentId": "humanitarian",
+      "round": 3,
+      "content": "[mock] Debate turn by humanitarian on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\" (round 3).",
+      "claimsAddressed": [
+        "environmental_security-c2"
+      ],
+      "stance": "nuance",
+      "newClaims": [
+        {
+          "id": "humanitarian-c3",
+          "text": "Claim from humanitarian in round 3"
+        }
+      ],
+      "references": []
+    },
+    {
+      "agentId": "ai_peace",
+      "round": 3,
+      "content": "[mock] Debate turn by ai_peace on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\" (round 3).",
+      "claimsAddressed": [
+        "environmental_security-c2"
+      ],
+      "stance": "nuance",
+      "newClaims": [
+        {
+          "id": "ai_peace-c3",
+          "text": "Claim from ai_peace in round 3"
+        }
+      ],
+      "references": []
+    },
+    {
+      "agentId": "media_comms",
+      "round": 3,
+      "content": "[mock] Debate turn by media_comms on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\" (round 3).",
+      "claimsAddressed": [
+        "environmental_security-c2"
+      ],
+      "stance": "nuance",
+      "newClaims": [
+        {
+          "id": "media_comms-c3",
+          "text": "Claim from media_comms in round 3"
+        }
+      ],
+      "references": []
+    },
+    {
+      "agentId": "ethics_rights",
+      "round": 3,
+      "content": "[mock] Debate turn by ethics_rights on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\" (round 3).",
+      "claimsAddressed": [
+        "environmental_security-c2"
+      ],
+      "stance": "nuance",
+      "newClaims": [
+        {
+          "id": "ethics_rights-c3",
+          "text": "Claim from ethics_rights in round 3"
+        }
+      ],
+      "references": []
+    }
+  ],
+  "challengeRecords": [
+    {
+      "challengerAgentId": "ethics_rights",
+      "targetClaimId": "chief_peace_architect-c1",
+      "challengeType": "ethics",
+      "content": "[mock] Challenge from ethics_rights on chief_peace_architect-c1 for \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\".",
+      "severity": "medium"
+    },
+    {
+      "challengerAgentId": "strategic_security",
+      "targetClaimId": "environmental_security-c2",
+      "challengeType": "assumption",
+      "content": "[mock] Challenge from strategic_security on environmental_security-c2 for \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\".",
+      "severity": "medium"
+    },
+    {
+      "challengerAgentId": "humanitarian",
+      "targetClaimId": "ethics_rights-c1",
+      "challengeType": "assumption",
+      "content": "[mock] Challenge from humanitarian on ethics_rights-c1 for \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\".",
+      "severity": "medium"
+    },
+    {
+      "challengerAgentId": "chief_peace_architect",
+      "targetClaimId": "ethics_rights-c2",
+      "challengeType": "assumption",
+      "content": "[mock] Challenge from chief_peace_architect on ethics_rights-c2 for \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\".",
+      "severity": "medium"
+    }
+  ],
+  "consensusDraft": {
+    "recommendationSummary": "Recommendation from Chief Peace Architect Recommendation from Ethics, Human Rights & Global Governance Recommendation from Humanitarian Affairs Recommendation from Peace & Conflict Resolution Recommendation from Diplomacy & International Relations Recommendation from Strategic & Security Studies Recommendation from AI for Peace Recommendation from Economic Development",
+    "strategicPillars": [
+      {
+        "id": "pillar-1",
+        "title": "chief peace architect",
+        "description": "[mock] Chief Peace Architect analysis on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\"."
+      },
+      {
+        "id": "pillar-2",
+        "title": "peace conflict",
+        "description": "[mock] Peace & Conflict Resolution analysis on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\"."
+      },
+      {
+        "id": "pillar-3",
+        "title": "diplomacy ir",
+        "description": "[mock] Diplomacy & International Relations analysis on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\"."
+      },
+      {
+        "id": "pillar-4",
+        "title": "strategic security",
+        "description": "[mock] Strategic & Security Studies analysis on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\"."
+      },
+      {
+        "id": "pillar-5",
+        "title": "humanitarian",
+        "description": "[mock] Humanitarian Affairs analysis on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\"."
+      }
+    ],
+    "phasedActions": [
+      {
+        "phase": "immediate",
+        "actions": [
+          "Recommendation from Chief Peace Architect",
+          "Recommendation from Ethics, Human Rights & Global Governance",
+          "Recommendation from Humanitarian Affairs"
+        ],
+        "timeframe": "0–6 months"
+      },
+      {
+        "phase": "medium",
+        "actions": [
+          "Recommendation from Peace & Conflict Resolution",
+          "Recommendation from Diplomacy & International Relations",
+          "Recommendation from Strategic & Security Studies"
+        ],
+        "timeframe": "6–24 months"
+      }
+    ],
+    "dissent": [],
+    "confidenceScore": 0.5984615384615385,
+    "ethicsCleared": true
+  },
+  "report": {
+    "title": "Strategic Peace Recommendation Report: How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?",
+    "sessionId": "02f55c7c-afc1-44b6-bd0f-ab76963d53f8",
+    "generatedAt": "2026-05-29T06:32:19.628Z",
+    "executiveSummary": "Recommendation from Chief Peace Architect Recommendation from Ethics, Human Rights & Global Governance Recommendation from Humanitarian Affairs Recommendation from Peace & Conflict Resolution Recommendation from Diplomacy & International Relations Recommendation from Strategic & Security Studies Recommendation from AI for Peace Recommendation from Economic Development",
+    "sections": [
+      {
+        "id": "executive",
+        "title": "Executive Summary",
+        "content": "Recommendation from Chief Peace Architect Recommendation from Ethics, Human Rights & Global Governance Recommendation from Humanitarian Affairs Recommendation from Peace & Conflict Resolution Recommendation from Diplomacy & International Relations Recommendation from Strategic & Security Studies Recommendation from AI for Peace Recommendation from Economic Development",
+        "contributingAgents": [
+          "chief_peace_architect"
+        ]
+      },
+      {
+        "id": "conflict-dynamics",
+        "title": "Conflict & Peace Dynamics",
+        "content": "Analysis and recommendations for **How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?** in the conflict dynamics domain, aligned with consensus pillars: chief peace architect, peace conflict, diplomacy ir, strategic security, humanitarian.",
+        "contributingAgents": [
+          "peace_conflict",
+          "strategic_security"
+        ]
+      },
+      {
+        "id": "diplomatic",
+        "title": "Diplomatic Pathways",
+        "content": "Analysis and recommendations for **How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?** in the diplomatic domain, aligned with consensus pillars: chief peace architect, peace conflict, diplomacy ir, strategic security, humanitarian.",
+        "contributingAgents": [
+          "diplomacy_ir"
+        ]
+      },
+      {
+        "id": "humanitarian",
+        "title": "Humanitarian & Protection",
+        "content": "Analysis and recommendations for **How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?** in the humanitarian domain, aligned with consensus pillars: chief peace architect, peace conflict, diplomacy ir, strategic security, humanitarian.",
+        "contributingAgents": [
+          "humanitarian",
+          "ethics_rights"
+        ]
+      },
+      {
+        "id": "economic-environmental",
+        "title": "Economic & Environmental Foundations",
+        "content": "Analysis and recommendations for **How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?** in the economic environmental domain, aligned with consensus pillars: chief peace architect, peace conflict, diplomacy ir, strategic security, humanitarian.",
+        "contributingAgents": [
+          "economic_dev",
+          "environmental_security"
+        ]
+      },
+      {
+        "id": "society-culture",
+        "title": "Society, Culture & Youth",
+        "content": "Analysis and recommendations for **How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?** in the society culture domain, aligned with consensus pillars: chief peace architect, peace conflict, diplomacy ir, strategic security, humanitarian.",
+        "contributingAgents": [
+          "civilization_culture",
+          "education_youth"
+        ]
+      },
+      {
+        "id": "technology-media",
+        "title": "Technology, Media & Space",
+        "content": "Analysis and recommendations for **How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?** in the technology media domain, aligned with consensus pillars: chief peace architect, peace conflict, diplomacy ir, strategic security, humanitarian.",
+        "contributingAgents": [
+          "ai_peace",
+          "media_comms",
+          "space_future"
+        ]
+      },
+      {
+        "id": "strategic-recommendations",
+        "title": "Strategic Recommendations & Phasing",
+        "content": "**immediate** (0–6 months): Recommendation from Chief Peace Architect; Recommendation from Ethics, Human Rights & Global Governance; Recommendation from Humanitarian Affairs\n\n**medium** (6–24 months): Recommendation from Peace & Conflict Resolution; Recommendation from Diplomacy & International Relations; Recommendation from Strategic & Security Studies",
+        "contributingAgents": [
+          "chief_peace_architect"
+        ]
+      },
+      {
+        "id": "metrics",
+        "title": "Metrics & Review",
+        "content": "Analysis and recommendations for **How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?** in the metrics domain, aligned with consensus pillars: chief peace architect, peace conflict, diplomacy ir, strategic security, humanitarian.",
+        "contributingAgents": [
+          "chief_peace_architect"
+        ]
+      },
+      {
+        "id": "dissent-ethics",
+        "title": "Dissent & Ethics Appendix",
+        "content": "Analysis and recommendations for **How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?** in the dissent ethics domain, aligned with consensus pillars: chief peace architect, peace conflict, diplomacy ir, strategic security, humanitarian.",
+        "contributingAgents": [
+          "ethics_rights"
+        ]
+      }
+    ],
+    "dissentAppendix": [],
+    "indicatorsOfProgress": [
+      {
+        "id": "de-escalation",
+        "label": "Verifiable de-escalation milestones",
+        "target": "Defined within 90 days"
+      },
+      {
+        "id": "protection",
+        "label": "Civilian protection outcomes",
+        "target": "Measurable access improvements"
+      }
+    ],
+    "risksAndMitigations": [
+      {
+        "id": "risk-1",
+        "description": "Implementation risk: chief peace architect",
+        "mitigation": "[mock] Chief Peace Architect analysis on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\".",
+        "severity": "medium"
+      },
+      {
+        "id": "risk-2",
+        "description": "Implementation risk: peace conflict",
+        "mitigation": "[mock] Peace & Conflict Resolution analysis on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\".",
+        "severity": "medium"
+      },
+      {
+        "id": "risk-3",
+        "description": "Implementation risk: diplomacy ir",
+        "mitigation": "[mock] Diplomacy & International Relations analysis on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\".",
+        "severity": "medium"
+      },
+      {
+        "id": "risk-4",
+        "description": "Implementation risk: strategic security",
+        "mitigation": "[mock] Strategic & Security Studies analysis on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\".",
+        "severity": "medium"
+      },
+      {
+        "id": "risk-5",
+        "description": "Implementation risk: humanitarian",
+        "mitigation": "[mock] Humanitarian Affairs analysis on \"How Can AI-Powered Diplomacy Help Prevent Future Wars and Build Sustainable Peace?\".",
+        "severity": "medium"
+      }
+    ]
+  },
+  "errors": [],
+  "ethicsBlocking": false,
+  "humanReviewStatus": null,
+  "generatedAt": "2026-05-29T06:32:19.652Z"
+}

@@ -1,0 +1,11 @@
+<svg viewBox="0 0 640 360" role="img" aria-labelledby="fig2-title fig2-desc">
+<title id="fig2-title">Economic cost of violence bar chart</title>
+<desc id="fig2-desc">Horizontal bars for military expenditure, internal security, and other violence-related costs totaling over 19 trillion USD.</desc>
+<rect width="640" height="360" fill="#faf9f7"/>
+<text x="320" y="28" text-anchor="middle" font-size="13" fill="#1a2744">Economic Impact of Violence (Illustrative, 2023)</text>
+<rect x="180" y="60" width="380" height="36" fill="#1a2744"/><text x="170" y="84" text-anchor="end" font-size="11">Military &amp; security</text><text x="570" y="84" font-size="11">~$12T</text>
+<rect x="180" y="110" width="300" height="36" fill="#3d5a80"/><text x="170" y="134" text-anchor="end" font-size="11">Internal conflict</text><text x="490" y="134" font-size="11">~$5T</text>
+<rect x="180" y="160" width="220" height="36" fill="#6b7c93"/><text x="170" y="184" text-anchor="end" font-size="11">Crime &amp; homicide</text><text x="410" y="184" font-size="11">~$2T</text>
+<rect x="180" y="210" width="120" height="36" fill="#b8860b"/><text x="170" y="234" text-anchor="end" font-size="11">Prevention gap</text><text x="310" y="234" font-size="11">&lt;$0.2T</text>
+<text x="320" y="300" text-anchor="middle" font-size="10" fill="#4a5568">Total broad measure: &gt;$19 trillion (IEP, 2024)</text>
+</svg>

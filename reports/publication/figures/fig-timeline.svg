@@ -1,0 +1,11 @@
+<svg viewBox="0 0 640 200" role="img" aria-labelledby="fig8-title fig8-desc">
+<title id="fig8-title">Implementation timeline 2026-2036</title>
+<desc id="fig8-desc">Timeline from 2026 Envoy appointment through 2036 treaty upgrade path.</desc>
+<rect width="640" height="200" fill="#faf9f7"/>
+<line x1="40" y1="100" x2="600" y2="100" stroke="#1a2744" stroke-width="3"/>
+<circle cx="80" cy="100" r="8" fill="#b8860b"/><text x="80" y="80" text-anchor="middle" font-size="9">2026</text><text x="80" y="130" font-size="8">Envoy</text>
+<circle cx="200" cy="100" r="8" fill="#3d5a80"/><text x="200" y="80" font-size="9">2028</text><text x="200" y="130" font-size="8">GDAIC draft</text>
+<circle cx="320" cy="100" r="8" fill="#3d5a80"/><text x="320" y="80" font-size="9">2030</text><text x="320" y="130" font-size="8">Pilots eval</text>
+<circle cx="440" cy="100" r="8" fill="#1a2744"/><text x="440" y="80" font-size="9">2032</text><text x="440" y="130" font-size="8">Commons</text>
+<circle cx="560" cy="100" r="8" fill="#1a2744"/><text x="560" y="80" font-size="9">2036</text><text x="560" y="130" font-size="8">Treaty path</text>
+</svg>

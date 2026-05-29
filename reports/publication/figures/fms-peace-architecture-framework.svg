@@ -1,0 +1,55 @@
+<svg viewBox="0 0 720 720" role="img" aria-labelledby="fms-paf-title fms-paf-desc" xmlns="http://www.w3.org/2000/svg">
+<title id="fms-paf-title">FMS Peace Architecture Framework  Seven Pillars</title>
+<desc id="fms-paf-desc">Circular diagram with Multilateral Cooperation at center, surrounded by seven pillars: Preventive Diplomacy, AI Governance, Human Dignity, Economic Stability, Climate and Resource Security, Education and Future Generations.</desc>
+<rect width="720" height="720" fill="#faf9f7"/>
+<text x="360" y="36" text-anchor="middle" font-family="Georgia, serif" font-size="16" font-weight="bold" fill="#1a2744">FMS Peace Architecture Framework"</text>
+<text x="360" y="56" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#4a5568">Integrating GDAIC within a seven-pillar global peace system</text>
+<circle cx="360" cy="380" r="72" fill="#1a2744" stroke="#b8860b" stroke-width="3"/>
+<text x="360" y="368" text-anchor="middle" font-size="11" fill="#fff" font-weight="bold">Multilateral</text>
+<text x="360" y="384" text-anchor="middle" font-size="11" fill="#fff" font-weight="bold">Cooperation</text>
+<text x="360" y="404" text-anchor="middle" font-size="9" fill="#e8d5a3">(GDAIC hub)</text>
+<g id="pillar-1">
+<line x1="360" y1="308" x2="360" y2="140" stroke="#3d5a80" stroke-width="2"/>
+<rect x="260" y="70" width="200" height="56" rx="6" fill="#3d5a80"/>
+<text x="360" y="94" text-anchor="middle" font-size="11" fill="#fff" font-weight="bold">1. Preventive Diplomacy</text>
+<text x="360" y="112" text-anchor="middle" font-size="9" fill="#e8eef5">Early warning � mediation</text>
+</g>
+<g id="pillar-2">
+<line x1="428" y1="340" x2="560" y2="220" stroke="#3d5a80" stroke-width="2"/>
+<rect x="500" y="170" width="200" height="56" rx="6" fill="#2d5a4a"/>
+<text x="600" y="194" text-anchor="middle" font-size="11" fill="#fff" font-weight="bold">2. AI Governance</text>
+<text x="600" y="212" text-anchor="middle" font-size="9" fill="#e8f5ee">GDAIC � provenance � HRIA</text>
+</g>
+<g id="pillar-3">
+<line x1="452" y1="400" x2="580" y2="480" stroke="#3d5a80" stroke-width="2"/>
+<rect x="520" y="460" width="180" height="56" rx="6" fill="#8b2942"/>
+<text x="610" y="484" text-anchor="middle" font-size="11" fill="#fff" font-weight="bold">3. Human Dignity</text>
+<text x="610" y="502" text-anchor="middle" font-size="9" fill="#f5e8ec">Rights � WPS � accountability</text>
+</g>
+<g id="pillar-4">
+<line x1="400" y1="448" x2="480" y2="560" stroke="#3d5a80" stroke-width="2"/>
+<rect x="400" y="560" width="200" height="56" rx="6" fill="#b8860b"/>
+<text x="500" y="584" text-anchor="middle" font-size="11" fill="#1a2744" font-weight="bold">4. Economic Stability</text>
+<text x="500" y="602" text-anchor="middle" font-size="9" fill="#1a2744">Prevention finance � sanctions equity</text>
+</g>
+<g id="pillar-5">
+<line x1="320" y1="452" x2="240" y2="560" stroke="#3d5a80" stroke-width="2"/>
+<rect x="120" y="560" width="200" height="56" rx="6" fill="#4a7c59"/>
+<text x="220" y="584" text-anchor="middle" font-size="11" fill="#fff" font-weight="bold">5. Climate &amp; Resource</text>
+<text x="220" y="602" text-anchor="middle" font-size="9" fill="#e8f5ec">IPCC-aligned � water diplomacy</text>
+</g>
+<g id="pillar-6">
+<line x1="268" y1="400" x2="140" y2="480" stroke="#3d5a80" stroke-width="2"/>
+<rect x="20" y="460" width="200" height="56" rx="6" fill="#5a4a8b"/>
+<text x="120" y="484" text-anchor="middle" font-size="11" fill="#fff" font-weight="bold">6. Education &amp; Youth</text>
+<text x="120" y="502" text-anchor="middle" font-size="9" fill="#ece8f5">CVE � civic resilience</text>
+</g>
+<g id="pillar-7">
+<line x1="292" y1="340" x2="160" y2="220" stroke="#3d5a80" stroke-width="2"/>
+<rect x="20" y="170" width="200" height="56" rx="6" fill="#1a2744"/>
+<text x="120" y="194" text-anchor="middle" font-size="11" fill="#fff" font-weight="bold">7. Multilateral Cooperation</text>
+<text x="120" y="212" text-anchor="middle" font-size="9" fill="#c5d0e8">UN � regional orgs � commons</text>
+</g>
+<ellipse cx="360" cy="380" rx="280" ry="280" fill="none" stroke="#d4cfc4" stroke-width="1" stroke-dasharray="8,6"/>
+<text x="360" y="680" text-anchor="middle" font-size="10" fill="#4a5568">FMS Strategic Review Vol. 1, Iss. 1 (2026) � Dr. Fatih Sayin, Editor-in-Chief</text>
+</svg>

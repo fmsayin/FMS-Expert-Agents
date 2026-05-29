@@ -1,0 +1,47 @@
+% FMS Strategic Review — Pandoc LaTeX template wrapper
+% Generate PDF via:
+%   pandoc ../FMS-Strategic-Review-Journal.md --metadata-file=metadata.yaml -o FMS-Strategic-Review.pdf --pdf-engine=xelatex
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\setsansfont{Arial}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[L]{\small FMS Strategic Review}
+\fancyhead[C]{\small Vol.~1, Iss.~1 (2026)}
+\fancyhead[R]{\small Sayin (Ed.)}
+\fancyfoot[C]{\thepage}
+\usepackage{xcolor}
+\definecolor{navy}{HTML}{1A2744}
+\definecolor{gold}{HTML}{B8860B}
+
+% Pandoc injects body below when using --template or defaults
+$if(title)$
+\title{$title$}
+$endif$
+$if(subtitle)$
+\subtitle{$subtitle$}
+$endif$
+$if(author)$
+\author{$for(author)$$author$$sep$ \\ $endfor$}
+$endif$
+$if(date)$
+\date{$date$}
+$endif$
+
+\begin{document}
+$if(title)$
+\maketitle
+$endif$
+$if(toc)$
+\tableofcontents
+\newpage
+$endif$
+$body$
+\end{document}

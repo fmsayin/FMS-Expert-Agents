@@ -1,0 +1,56 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build
+dist/
+.next/
+out/
+.turbo/
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Test / coverage
+coverage/
+
+# Prisma (local studio artifacts only; commit prisma/migrations/)
+packages/db/.env
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+
+# Python legacy (keep source, ignore caches)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local binaries / secrets
+pnpm.exe
+credentials.json
+*credentials*
+*.pem
+secrets/
+
+# Office lock files
+~$*

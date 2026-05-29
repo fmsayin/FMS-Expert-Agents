@@ -1,0 +1,30 @@
+{
+  "name": "fms-expert-agents",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@9.15.0",
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "typecheck": "turbo typecheck",
+    "db:generate": "pnpm --filter @fms/db db:generate",
+    "db:migrate": "pnpm --filter @fms/db db:migrate",
+    "db:studio": "pnpm --filter @fms/db db:studio",
+    "graph:visualize": "node scripts/graph-visualize.mjs"
+  },
+  "devDependencies": {
+    "tsx": "^4.22.3",
+    "turbo": "^2.5.0",
+    "typescript": "^5.8.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@langchain/core": "^0.3.66",
+    "@langchain/langgraph": "^0.4.9",
+    "@langchain/openai": "^0.6.3",
+    "zod": "^3.24.0"
+  }
+}

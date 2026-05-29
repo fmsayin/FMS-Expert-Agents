@@ -1,0 +1,28 @@
+---
+title: "AI-Powered Diplomacy and the Architecture of Sustainable Peace"
+subtitle: "FMS Strategic Review, Volume 1, Issue 1 (2026)"
+author:
+  - name: "Dr. Fatih Sayin"
+    role: "Editor-in-Chief"
+date: "29 May 2026"
+lang: en-US
+documentclass: article
+papersize: letter
+fontsize: 11pt
+geometry: margin=1in
+linestretch: 1.15
+mainfont: "Times New Roman"
+sansfont: "Arial"
+colorlinks: true
+link-citations: true
+toc: true
+toc-depth: 3
+numbersections: true
+header-includes:
+  - \usepackage{fancyhdr}
+  - \pagestyle{fancy}
+  - \fancyhead[L]{FMS Strategic Review}
+  - \fancyhead[C]{Vol.\ 1, Iss.\ 1 (2026)}
+  - \fancyhead[R]{Sayin (Ed.)}
+---
+

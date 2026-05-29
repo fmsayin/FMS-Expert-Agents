@@ -1,0 +1,16 @@
+<svg viewBox="0 0 480 400" role="img" aria-labelledby="fig6-title fig6-desc">
+<title id="fig6-title">Risk heat map</title>
+<desc id="fig6-desc">5x5 heat map grid with escalation by algorithm and synthetic information warfare in high likelihood high impact quadrant.</desc>
+<rect width="480" height="400" fill="#faf9f7"/>
+<text x="240" y="24" text-anchor="middle" font-size="12" fill="#1a2744">Likelihood × Impact</text>
+<text x="30" y="200" transform="rotate(-90 30,200)" font-size="10">Impact →</text>
+<text x="240" y="385" text-anchor="middle" font-size="10">Likelihood →</text>
+<g transform="translate(80,50)">
+<rect x="0" y="240" width="60" height="60" fill="#2d5a2d" opacity="0.3"/><rect x="60" y="240" width="60" height="60" fill="#6b8e23" opacity="0.5"/>
+<rect x="120" y="240" width="60" height="60" fill="#b8860b" opacity="0.6"/><rect x="180" y="240" width="60" height="60" fill="#c45c26" opacity="0.7"/>
+<rect x="240" y="240" width="60" height="60" fill="#8b2942" opacity="0.8"/>
+<rect x="240" y="180" width="60" height="60" fill="#c45c26"/><rect x="240" y="120" width="60" height="60" fill="#8b2942"/>
+<text x="270" y="275" font-size="8" fill="#fff" text-anchor="middle">Escalation</text>
+<text x="270" y="155" font-size="8" fill="#fff" text-anchor="middle">Deepfakes</text>
+</g>
+</svg>

@@ -1,0 +1,23 @@
+{
+  "extends": "@fms/config/typescript/nextjs",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@fms/agents": ["../../packages/agents/src/index.ts"],
+      "@fms/orchestrator": ["../../packages/orchestrator/src/index.ts"],
+      "@fms/db": ["../../packages/db/src/index.ts"],
+      "@fms/shared": ["../../packages/shared/src/index.ts"]
+    },
+    "plugins": [{ "name": "next" }]
+  },
+  "include": [
+    "next-env.d.ts",
+    "app/**/*.ts",
+    "app/**/*.tsx",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": ["node_modules"]
+}
