@@ -2,6 +2,52 @@ import type { ResearchOutput } from "./types";
 
 export const RESEARCH_OUTPUTS: ResearchOutput[] = [
   {
+    id: "authoritarian-exit-dilemma",
+    slug: "authoritarian-exit-dilemma",
+    title:
+      "Authoritarian Exit Dilemmas and Democratic Transition: The Role of Credible Exit Guarantees in Conflict Prevention",
+    type: "Academic Article",
+    date: "2026-05",
+    summary:
+      "Formalizes the Authoritarian Exit Dilemma and applies comparative process-tracing across eight cases to explain when credible exit guarantees reduce violence and enable democratic transition.",
+    tags: [
+      "Democratization",
+      "Authoritarian Exit",
+      "Transitional Justice",
+      "Conflict Prevention",
+      "Political Settlements",
+    ],
+    author: "Dr. Fatih Sayin",
+    affiliation: "Foundation for Multilateral Strategies (FMS)",
+    wordCount: 5780,
+    featured: true,
+    contentSlug: "authoritarian-exit-dilemma",
+    abstract:
+      "This article examines why authoritarian leaders frequently escalate repression during political crises, and whether credible post-exit guarantees—negotiated transitions, exile arrangements, conditional amnesties, and transitional justice mechanisms—can reduce violence and facilitate democratic transition.",
+    keywords: [
+      "authoritarian exit dilemma",
+      "democratic transition",
+      "credible exit guarantees",
+      "transitional justice",
+      "political settlements",
+      "conflict prevention",
+      "elite bargaining",
+      "amnesty",
+      "exile",
+      "repression",
+    ],
+    relatedAgentSlugs: [
+      "transitional-justice-specialist",
+      "conflict-mediation-specialist",
+      "post-conflict-stabilization-advisor",
+    ],
+    relatedCategories: [
+      "Peace & Security Agents",
+      "International Relations Agents",
+      "Legal & Policy Agents",
+    ],
+  },
+  {
     id: "ai-diplomacy-peace",
     title: "AI-Powered Diplomacy and the Architecture of Sustainable Peace",
     type: "Strategic Review",
@@ -9,15 +55,6 @@ export const RESEARCH_OUTPUTS: ResearchOutput[] = [
     summary:
       "Examines how AI-augmented diplomacy can strengthen verification, inclusion, and institutional trust in peace processes.",
     tags: ["AI Governance", "Diplomacy", "Peace Architecture"],
-  },
-  {
-    id: "authoritarian-exit",
-    title: "The Authoritarian Exit Dilemma: Transition Pathways and Spoiler Risks",
-    type: "Working Paper",
-    date: "2025-10",
-    summary:
-      "Analyzes incentive structures, elite bargains, and international leverage in authoritarian-to-democratic transitions.",
-    tags: ["Governance", "Transition", "Spoilers"],
   },
   {
     id: "gdaic-framework",
@@ -56,3 +93,13 @@ export const RESEARCH_OUTPUTS: ResearchOutput[] = [
     tags: ["Ceasefire", "Verification", "Peace Operations"],
   },
 ];
+
+export const FEATURED_OUTPUT = RESEARCH_OUTPUTS.find((o) => o.featured);
+
+export function getResearchOutputBySlug(slug: string): ResearchOutput | undefined {
+  return RESEARCH_OUTPUTS.find((o) => o.slug === slug);
+}
+
+export function getArticleSlugs(): string[] {
+  return RESEARCH_OUTPUTS.filter((o) => o.slug && o.contentSlug).map((o) => o.slug!);
+}

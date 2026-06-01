@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { AGENTS, AVAILABLE_AGENT_COUNT } from "@/data/agents";
-import { RESEARCH_OUTPUTS } from "@/data/research-outputs";
+import { FEATURED_OUTPUT, RESEARCH_OUTPUTS } from "@/data/research-outputs";
 import { PROJECTS } from "@/data/projects";
 import { MISSION_STATEMENT } from "@/lib/agents";
 import { AgentCard } from "@/components/agents/AgentCard";
@@ -21,7 +21,7 @@ export default function HomePage() {
     Boolean,
   ) as typeof AGENTS;
   const activeProjects = PROJECTS.filter((p) => p.status === "Active").length;
-  const recentOutputs = RESEARCH_OUTPUTS.slice(0, 4);
+  const recentOutputs = RESEARCH_OUTPUTS.filter((o) => !o.featured).slice(0, 3);
 
   return (
     <div className="space-y-10">
@@ -116,6 +116,38 @@ export default function HomePage() {
         </div>
       </section>
 
+      {FEATURED_OUTPUT?.slug && (
+        <section>
+          <div className="mb-4 flex items-center justify-between">
+            <h2 className="text-xl font-semibold">Featured research</h2>
+            <Button asChild variant="ghost" size="sm">
+              <Link href="/outputs">View all outputs</Link>
+            </Button>
+          </div>
+          <Card className="border-gold/25 bg-gradient-to-r from-primary/5 to-gold/5">
+            <CardHeader>
+              <div className="flex items-center gap-2">
+                <Badge className="bg-gold text-gold-dark text-[10px]">Featured</Badge>
+                <Badge variant="outline" className="text-[10px]">
+                  {FEATURED_OUTPUT.type}
+                </Badge>
+              </div>
+              <CardTitle className="font-serif text-lg leading-snug">
+                <Link href={`/outputs/${FEATURED_OUTPUT.slug}`} className="hover:text-primary">
+                  {FEATURED_OUTPUT.title}
+                </Link>
+              </CardTitle>
+              <CardDescription className="line-clamp-2">{FEATURED_OUTPUT.summary}</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <Button asChild size="sm" variant="outline">
+                <Link href={`/outputs/${FEATURED_OUTPUT.slug}`}>Read article</Link>
+              </Button>
+            </CardContent>
+          </Card>
+        </section>
+      )}
+
       <section>
         <div className="mb-4 flex items-center justify-between">
           <h2 className="text-xl font-semibold">Recent research outputs</h2>
@@ -134,9 +166,17 @@ export default function HomePage() {
                     </Badge>
                     <span className="text-xs text-muted-foreground">{output.date}</span>
                   </div>
-                  <CardTitle className="text-base leading-snug">{output.title}</CardTitle>
+                  <CardTitle className="text-base leading-snug">
+                    {output.slug ? (
+                      <Link href={`/outputs/${output.slug}`} className="hover:text-primary">
+                        {output.title}
+                      </Link>
+                    ) : (
+                      output.title
+                    )}
+                  </CardTitle>
                 </CardHeader>
-                <CardContent className="text-sm text-muted-foreground line-clamp-2">
+                <CardContent className="line-clamp-2 text-sm text-muted-foreground">
                   {output.summary}
                 </CardContent>
               </Card>

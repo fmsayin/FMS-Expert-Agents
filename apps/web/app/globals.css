@@ -43,6 +43,22 @@
   }
 }
 
+@media print {
+  .print-article aside,
+  .print-article nav {
+    display: none !important;
+  }
+
+  .print-article header {
+    break-after: avoid;
+  }
+
+  .print-article .prose {
+    max-width: none;
+    font-size: 11pt;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
