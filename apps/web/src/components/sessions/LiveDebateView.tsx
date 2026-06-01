@@ -16,7 +16,7 @@ import {
   type SessionReport,
 } from "@/lib/api-client";
 import { getAgentMetaById } from "@/lib/agents";
-import { SessionAgentRoster } from "@/components/agents/AgentGrid";
+import { SessionAgentRoster } from "@/components/agents/SessionAgentRoster";
 import type { AgentStatus } from "@/components/agents/AgentPanel";
 import { PhaseTimeline } from "@/components/sessions/PhaseTimeline";
 import { ConsensusView } from "@/components/consensus/ConsensusView";

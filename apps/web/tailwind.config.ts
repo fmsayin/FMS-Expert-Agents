@@ -35,6 +35,12 @@ const config: Config = {
           foreground: "hsl(var(--accent-foreground))",
         },
         warning: "hsl(var(--warning))",
+        gold: {
+          DEFAULT: "hsl(var(--gold))",
+          light: "hsl(var(--gold-light))",
+          dark: "hsl(var(--gold-dark))",
+        },
+        sidebar: "hsl(var(--sidebar))",
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",

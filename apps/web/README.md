@@ -1,18 +1,21 @@
 # FMS Expert Agents — Web App
 
-Next.js App Router frontend for the multi-agent peace think tank dashboard.
+Next.js App Router dashboard for the FMS Expert Agents think-tank platform.
+
+**Mission:** Building Peace Through Intelligence, Diplomacy, and Human Dignity
 
 ## Pages
 
 | Route | Description |
 |-------|-------------|
-| `/` · `/dashboard` | Home: mission statement, how-it-works, recent sessions |
-| `/sessions` | Session list with status badges and pagination |
-| `/sessions/new` | Topic submission: context, debate rounds, expert selection |
-| `/sessions/[id]` | Live session: phase timeline, SSE debate feed, analyses, consensus, SPRR |
-| `/agents` | Directory of all 13 domain experts |
+| `/` | Home — hero, mission, stats, featured agents, recent outputs |
+| `/agents` | Expert agents directory with search, category, and status filters |
+| `/agents/[slug]` | Agent profile — capabilities and sample outputs |
+| `/outputs` | Research outputs — policy briefs, strategic reviews, working papers |
+| `/projects` | Active research projects and assigned agents |
+| `/about` | About FMS, methodology, contact placeholder |
 
-Auth routes (`/sign-in`, `/sign-up`) use Clerk placeholders for production; the dashboard works without auth in local development when API stubs allow unauthenticated access.
+Legacy routes `/research` redirects to `/outputs`. Session routes remain under `/sessions` for multi-agent deliberation.
 
 ## Development
 
@@ -23,7 +26,7 @@ pnpm install
 pnpm dev
 ```
 
-The web app runs at [http://localhost:3000](http://localhost:3000) (`@fms/web` on port 3000).
+Open [http://localhost:3000](http://localhost:3000).
 
 From this package only:
 
@@ -31,13 +34,17 @@ From this package only:
 pnpm dev
 ```
 
+Other scripts: `pnpm build`, `pnpm lint`, `pnpm typecheck`.
+
 ## Structure
 
-- `app/` — App Router pages and API routes
-- `src/components/` — UI (shadcn), layout, sessions, agents, consensus, report
-- `src/hooks/` — `useSession`, `useSessionStream` (SSE)
-- `src/lib/` — `api-client`, agent display metadata
+- `app/(dashboard)/` — Main UI routes with `AppShell` layout
+- `src/components/layout/` — `AppShell`, `Sidebar`, `Header`, `HeaderSearch`
+- `src/components/agents/` — `AgentCard`, `AgentGrid`, `CategoryFilter`, `AgentStatusBadge`
+- `src/components/ui/` — Button, Card, Badge, Input (Tailwind + CVA)
+- `src/data/agents.ts` — Static showcase data (31 expert agents)
+- `src/data/research-outputs.ts`, `projects.ts` — Outputs and projects
 
-## API
+## Design
 
-The UI consumes REST + SSE under `/api/sessions/*`. See `docs/architecture/06-api-design.md` for the full contract.
+Navy/charcoal/slate palette with gold accent (`app/globals.css`, `tailwind.config.ts`). Responsive: desktop sidebar, mobile hamburger menu, 2-column tablet agent grid.
