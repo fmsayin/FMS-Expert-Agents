@@ -13,7 +13,7 @@ import {
   Microscope,
   X,
 } from "lucide-react";
-import { MISSION_STATEMENT } from "@/lib/agents";
+import { MISSION_STATEMENT } from "@/lib/mission";
 import { cn } from "@/lib/utils";
 
 const NAV = [

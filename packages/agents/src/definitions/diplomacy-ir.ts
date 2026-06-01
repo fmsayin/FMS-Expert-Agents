@@ -1,5 +1,5 @@
 import { AgentId } from "@fms/shared";
-import type { AgentDefinition } from "../types.js";
+import type { AgentDefinition } from "../types";
 
 export const diplomacyIr: AgentDefinition = {
   id: AgentId.DIPLOMACY_IR,

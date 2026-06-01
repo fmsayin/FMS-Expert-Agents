@@ -1,4 +1,4 @@
-import { MISSION_STATEMENT } from "@/lib/agents";
+import { MISSION_STATEMENT } from "@/lib/mission";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function AboutPage() {

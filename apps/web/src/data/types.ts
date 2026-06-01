@@ -30,6 +30,7 @@ export type ShowcaseAgent = Agent;
 export type ResearchOutputType =
   | "Policy Brief"
   | "Strategic Review"
+  | "Flagship Policy Publication / Strategic Review"
   | "Working Paper"
   | "Framework"
   | "Academic Article";

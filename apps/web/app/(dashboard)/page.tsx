@@ -2,7 +2,7 @@ import Link from "next/link";
 import { AGENTS, AVAILABLE_AGENT_COUNT } from "@/data/agents";
 import { FEATURED_OUTPUT, RESEARCH_OUTPUTS } from "@/data/research-outputs";
 import { PROJECTS } from "@/data/projects";
-import { MISSION_STATEMENT } from "@/lib/agents";
+import { MISSION_STATEMENT } from "@/lib/mission";
 import { AgentCard } from "@/components/agents/AgentCard";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";

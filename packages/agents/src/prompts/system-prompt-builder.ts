@@ -1,5 +1,5 @@
-import { GLOBAL_EXPERT_DEBATE_RULES } from "../debate-rules.js";
-import type { AgentDefinition } from "../types.js";
+import { GLOBAL_EXPERT_DEBATE_RULES } from "../debate-rules";
+import type { AgentDefinition } from "../types";
 
 /** Builds a full system prompt from an agent definition (stub). */
 export function buildSystemPrompt(agent: AgentDefinition): string {

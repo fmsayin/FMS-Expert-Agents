@@ -1,4 +1,4 @@
-import type { AgentId, SessionPhase } from "./constants.js";
+import type { AgentId, SessionPhase } from "./constants";
 
 /** SSE event payloads streamed to the web client. */
 export type SseEvent =

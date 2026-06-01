@@ -2,6 +2,53 @@ import type { ResearchOutput } from "./types";
 
 export const RESEARCH_OUTPUTS: ResearchOutput[] = [
   {
+    id: "ai-diplomacy-sustainable-peace",
+    slug: "ai-diplomacy-sustainable-peace",
+    title: "AI-Powered Diplomacy and the Architecture of Sustainable Peace",
+    type: "Flagship Policy Publication / Strategic Review",
+    date: "2026-05",
+    summary:
+      "Inaugural FMS Strategic Review volume on how AI-augmented preventive diplomacy, multilateral governance, and human dignity can strengthen sustainable peace—grounded in thirteen expert domains and the Global Diplomatic AI Compact (GDAIC).",
+    tags: [
+      "AI Governance",
+      "Preventive Diplomacy",
+      "Peace Architecture",
+      "Multilateral Governance",
+      "GDAIC",
+    ],
+    author: "Dr. Fatih Sayin",
+    affiliation:
+      "FMS Strategic Review, Volume 1, Issue 1 (2026) · Foundation for Multilateral Strategies (FMS)",
+    wordCount: 22000,
+    featured: true,
+    contentSlug: "ai-diplomacy-sustainable-peace",
+    abstract:
+      "Artificial intelligence is reshaping international relations faster than norms and accountability mechanisms can adapt. This inaugural FMS Strategic Review synthesizes thirteen interdisciplinary expert perspectives to argue that AI can materially strengthen preventive diplomacy and sustainable peacebuilding only when subordinated to international law, anchored in human rights, and governed through inclusive multilateral frameworks—not unilateral military or commercial advantage.",
+    keywords: [
+      "artificial intelligence",
+      "preventive diplomacy",
+      "peacebuilding",
+      "multilateral governance",
+      "Global Diplomatic AI Compact",
+      "human dignity",
+      "dual-use AI",
+      "early warning",
+    ],
+    relatedAgentSlugs: [
+      "ai-governance-analyst",
+      "diplomatic-affairs-specialist",
+      "chief-peace-architect",
+      "multilateral-diplomacy-advisor",
+      "policy-brief-writer",
+    ],
+    relatedCategories: [
+      "AI Governance Agents",
+      "International Relations Agents",
+      "Peace & Security Agents",
+      "Research & Writing Agents",
+    ],
+  },
+  {
     id: "authoritarian-exit-dilemma",
     slug: "authoritarian-exit-dilemma",
     title:
@@ -20,7 +67,7 @@ export const RESEARCH_OUTPUTS: ResearchOutput[] = [
     author: "Dr. Fatih Sayin",
     affiliation: "Foundation for Multilateral Strategies (FMS)",
     wordCount: 5780,
-    featured: true,
+    featured: false,
     contentSlug: "authoritarian-exit-dilemma",
     abstract:
       "This article examines why authoritarian leaders frequently escalate repression during political crises, and whether credible post-exit guarantees—negotiated transitions, exile arrangements, conditional amnesties, and transitional justice mechanisms—can reduce violence and facilitate democratic transition.",
@@ -46,15 +93,6 @@ export const RESEARCH_OUTPUTS: ResearchOutput[] = [
       "International Relations Agents",
       "Legal & Policy Agents",
     ],
-  },
-  {
-    id: "ai-diplomacy-peace",
-    title: "AI-Powered Diplomacy and the Architecture of Sustainable Peace",
-    type: "Strategic Review",
-    date: "2025-11",
-    summary:
-      "Examines how AI-augmented diplomacy can strengthen verification, inclusion, and institutional trust in peace processes.",
-    tags: ["AI Governance", "Diplomacy", "Peace Architecture"],
   },
   {
     id: "gdaic-framework",

@@ -1,9 +1,6 @@
 import { AGENT_REGISTRY } from "@fms/agents";
 import { ALL_AGENT_IDS, type AgentId } from "@fms/shared";
 
-export const MISSION_STATEMENT =
-  "Building Peace Through Intelligence, Diplomacy, and Human Dignity";
-
 export type AccentGroup =
   | "governance"
   | "security"

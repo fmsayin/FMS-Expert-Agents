@@ -44,7 +44,7 @@ export function ArticleDetailView({ output, markdown }: Props) {
 
       <header className="rounded-xl border border-gold/25 bg-gradient-to-br from-primary via-primary to-primary/90 p-6 text-primary-foreground shadow-lg md:p-10 print:border print:bg-white print:text-black print:shadow-none">
         <p className="text-xs font-semibold uppercase tracking-widest text-gold-light print:text-gray-600">
-          {output.type} / Working Paper
+          {output.type}
         </p>
         <h1 className="mt-3 font-serif text-2xl font-semibold leading-tight tracking-tight md:text-3xl lg:text-4xl print:text-black">
           {output.title}
