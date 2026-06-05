@@ -54,6 +54,8 @@ const config: Config = {
       fontFamily: {
         sans: ["var(--font-sans)", "system-ui", "sans-serif"],
         serif: ["var(--font-serif)", "Georgia", "serif"],
+        playfair: ["var(--font-playfair)", "Georgia", "serif"],
+        baskerville: ["var(--font-libre)", "Georgia", "serif"],
       },
       keyframes: {
         "fade-in-up": {

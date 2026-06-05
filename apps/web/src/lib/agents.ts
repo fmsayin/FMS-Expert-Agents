@@ -1,5 +1,6 @@
 import { AGENT_REGISTRY } from "@fms/agents";
 import { ALL_AGENT_IDS, type AgentId } from "@fms/shared";
+import { compareDisplayNames } from "@/lib/figure-sort";
 
 export type AccentGroup =
   | "governance"
@@ -52,7 +53,7 @@ export const ALL_AGENTS: AgentMeta[] = ALL_AGENT_IDS.map((id) => {
     accentGroup: ACCENT_BY_AGENT[id],
     ethicsVeto: def.ethicsVeto,
   };
-});
+}).sort((a, b) => compareDisplayNames(a.displayName, b.displayName));
 
 export function getAgentMetaById(id: string): AgentMeta | undefined {
   return ALL_AGENTS.find((a) => a.id === id);

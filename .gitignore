@@ -50,7 +50,16 @@ pnpm.exe
 credentials.json
 *credentials*
 *.pem
-secrets/
+
+# Local API keys (tracked: secrets/README.md, secrets/openai.env.example; see secrets/.gitignore)
+secrets/openai.env
+secrets/.env
+secrets/*.env
+!secrets/openai.env.example
 
 # Office lock files
 ~$*
+
+# Figure RAG local store (embeddings + sources)
+.data/figure-rag/
+data/figure-rag/
