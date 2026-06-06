@@ -8,6 +8,7 @@ import {
   Bot,
   FlaskConical,
   FolderKanban,
+  Gavel,
   Home,
   Library,
   Menu,
@@ -25,6 +26,7 @@ const NAV = [
   { href: "/projects", label: "Projects", icon: FolderKanban },
   { href: "/outputs", label: "Research Outputs", icon: BookOpen },
   { href: "/policy-lab", label: "Policy Lab", icon: FlaskConical },
+  { href: "/roundtable", label: "Historical Round Table", icon: Gavel },
 ] as const;
 
 const PLACEHOLDER_NAV = [{ href: "/knowledge", label: "Knowledge Base", icon: Library }] as const;
