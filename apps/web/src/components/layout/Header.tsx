@@ -9,7 +9,7 @@ export function Header({
   subtitle?: string;
 }) {
   return (
-    <header className="border-b border-border/80 bg-background/90 px-4 py-3 backdrop-blur-md md:px-6">
+    <header className="border-b border-border bg-background/95 px-4 py-4 backdrop-blur md:px-8">
       <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
         <div className="min-w-0 flex-1">
           {title ? (

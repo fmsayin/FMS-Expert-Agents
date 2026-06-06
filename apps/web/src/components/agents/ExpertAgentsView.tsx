@@ -3,7 +3,6 @@
 import { useMemo, useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import { AGENTS } from "@/data/agents";
-import { compareDisplayNames } from "@/lib/figure-sort";
 import type { AgentCategory, AgentStatus } from "@/data/types";
 import { AgentGrid } from "@/components/agents/AgentGrid";
 import { CategoryFilter } from "@/components/agents/CategoryFilter";
@@ -53,11 +52,11 @@ export function ExpertAgentsView() {
         .join(" ")
         .toLowerCase();
       return haystack.includes(q);
-    }).sort((a, b) => compareDisplayNames(a.name, b.name));
+    });
   }, [query, category, status]);
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-6">
       <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
         <SearchBar value={query} onChange={setQuery} className="w-full lg:max-w-md" />
         <p className="text-sm text-muted-foreground">

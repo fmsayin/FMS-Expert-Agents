@@ -31,7 +31,7 @@ export function AgentCard({
   return (
     <Card
       className={cn(
-        "policy-agent-card flex flex-col border-border/80 transition-shadow hover:shadow-md",
+        "flex flex-col border-border/80 transition-shadow hover:shadow-md",
         className,
       )}
     >

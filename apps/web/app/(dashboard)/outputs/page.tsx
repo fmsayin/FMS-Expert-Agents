@@ -10,13 +10,10 @@ export default function OutputsPage() {
   const others = RESEARCH_OUTPUTS.filter((o) => !o.featured);
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-8">
       <div>
-        <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-primary">
-          Publications
-        </p>
-        <h1 className="mt-1 text-2xl font-semibold tracking-tight">Research Outputs</h1>
-        <p className="mt-2 max-w-3xl text-sm text-muted-foreground">
+        <h1 className="text-2xl font-semibold tracking-tight">Research Outputs</h1>
+        <p className="mt-2 max-w-3xl text-muted-foreground">
           Policy briefs, strategic reviews, working papers, and academic articles produced through
           FMS expert-agent analysis and structured deliberation.
         </p>
@@ -83,7 +80,7 @@ export default function OutputsPage() {
 
       <section>
         <h2 className="mb-4 text-lg font-semibold">All outputs</h2>
-        <ul className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+        <ul className="grid gap-4 md:grid-cols-2">
           {others.map((output) => (
             <li key={output.id}>
               <Card className="h-full border-border/80 transition-shadow hover:shadow-md">
