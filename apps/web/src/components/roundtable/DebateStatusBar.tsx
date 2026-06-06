@@ -101,7 +101,10 @@ export function DebateStatusBar({
     "consensus_building",
     "complete",
   ];
-  const currentStep = status === "idle" ? -1 : steps.indexOf(status);
+  const currentStep =
+    status === "idle"
+      ? -1
+      : steps.indexOf(status === "idle" ? "waiting" : status);
 
   const depthScore =
     strategicComplexityScore != null ? strategicComplexityScore : null;

@@ -25,7 +25,7 @@ export async function loadArticleMarkdown(contentSlug: string): Promise<string> 
 export function extractAbstract(markdown: string): string | null {
   const match = markdown.match(/## Abstract\s+([\s\S]*?)(?=\n---|\n## )/);
   if (!match) return null;
-  return match[1]!
+  return match[1]
     .replace(/\*\*([^*]+):\*\*/g, "$1:")
     .replace(/\n+/g, " ")
     .trim();

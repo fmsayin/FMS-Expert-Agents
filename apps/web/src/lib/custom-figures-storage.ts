@@ -176,11 +176,9 @@ export function updateCustomFigure(
   const figures = readRaw();
   const index = figures.findIndex((f) => f.id === id);
   if (index === -1) return undefined;
-  const existing = figures[index]!;
   const updated: CustomFigure = {
-    ...existing,
+    ...figures[index],
     ...input,
-    id: existing.id,
     updatedAt: new Date().toISOString(),
   };
   figures[index] = updated;
