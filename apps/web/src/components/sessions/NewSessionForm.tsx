@@ -81,7 +81,7 @@ export function NewSessionForm() {
       });
 
       if (startImmediately) {
-        await startSession(sessionId, "start");
+        await startSession(sessionId);
       }
 
       toast.success("Session created");
