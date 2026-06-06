@@ -14,6 +14,7 @@ type Props = {
 
 function formatDate(date: string): string {
   const [year, month] = date.split("-");
+  if (!year) return date;
   if (!month) return year;
   const d = new Date(Number(year), Number(month) - 1);
   return d.toLocaleDateString("en-US", { month: "long", year: "numeric" });

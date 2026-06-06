@@ -63,11 +63,12 @@ export function saveDebateSession(
   const existingIdx = input.id ? sessions.findIndex((s) => s.id === input.id) : -1;
 
   if (existingIdx >= 0) {
+    const existing = sessions[existingIdx]!;
     const updated: DebateSession = {
-      ...sessions[existingIdx],
+      ...existing,
       ...input,
-      id: sessions[existingIdx].id,
-      createdAt: sessions[existingIdx].createdAt,
+      id: existing.id,
+      createdAt: existing.createdAt,
       updatedAt: now,
     };
     sessions[existingIdx] = updated;
@@ -96,16 +97,18 @@ export function toggleDebateBookmark(id: string): DebateSession | null {
   const sessions = readAll();
   const idx = sessions.findIndex((s) => s.id === id);
   if (idx < 0) return null;
-  sessions[idx] = { ...sessions[idx], bookmarked: !sessions[idx].bookmarked, updatedAt: Date.now() };
+  const existing = sessions[idx]!;
+  sessions[idx] = { ...existing, bookmarked: !existing.bookmarked, updatedAt: Date.now() };
   writeAll(sessions);
-  return sessions[idx];
+  return sessions[idx] ?? null;
 }
 
 export function updateDebateSessionNotes(id: string, notes: string): DebateSession | null {
   const sessions = readAll();
   const idx = sessions.findIndex((s) => s.id === id);
   if (idx < 0) return null;
-  sessions[idx] = { ...sessions[idx], notes, updatedAt: Date.now() };
+  const existing = sessions[idx]!;
+  sessions[idx] = { ...existing, notes, updatedAt: Date.now() };
   writeAll(sessions);
-  return sessions[idx];
+  return sessions[idx] ?? null;
 }

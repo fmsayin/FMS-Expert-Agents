@@ -139,7 +139,7 @@ export function LiveDebateView({ sessionId }: { sessionId: string }) {
   const handleStart = async () => {
     setStarting(true);
     try {
-      await startSession(sessionId, "start");
+      await startSession(sessionId);
       toast.success("Session started");
       await refresh();
     } catch (e) {
@@ -319,7 +319,7 @@ export function LiveDebateView({ sessionId }: { sessionId: string }) {
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="text-sm text-muted-foreground">
-                    {a.output.executiveSummary ?? "Analysis in progress…"}
+                    {a.summary || "Analysis in progress…"}
                   </CardContent>
                 </Card>
               ))}

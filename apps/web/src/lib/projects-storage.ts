@@ -52,14 +52,15 @@ export function addSessionToProject(projectId: string, sessionId: string): UserP
   const projects = readAll();
   const idx = projects.findIndex((p) => p.id === projectId);
   if (idx < 0) return null;
-  const ids = projects[idx].debateSessionIds;
+  const project = projects[idx]!;
+  const ids = project.debateSessionIds;
   if (!ids.includes(sessionId)) {
     projects[idx] = {
-      ...projects[idx],
+      ...project,
       debateSessionIds: [...ids, sessionId],
       updatedAt: Date.now(),
     };
     writeAll(projects);
   }
-  return projects[idx];
+  return projects[idx] ?? null;
 }

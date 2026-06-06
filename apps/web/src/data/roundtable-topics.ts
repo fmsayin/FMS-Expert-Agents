@@ -32,7 +32,7 @@ export const ROUNDTABLE_TOPICS: RoundTableTopic[] = [
   { id: "civilization-society", label: "Civilization & Society", full: "Civilization & Society" },
 ];
 
-export const DEFAULT_ROUNDTABLE_TOPIC_ID = ROUNDTABLE_TOPICS[0].id;
+export const DEFAULT_ROUNDTABLE_TOPIC_ID = ROUNDTABLE_TOPICS[0]?.id ?? "nato-expansion";
 
 export const CUSTOM_ROUNDTABLE_TOPIC_ID = "custom";
 

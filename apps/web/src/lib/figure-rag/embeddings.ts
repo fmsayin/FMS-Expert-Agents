@@ -42,7 +42,7 @@ export async function getOpenAIEmbedding(text: string): Promise<number[]> {
 export async function getOpenAIEmbeddings(texts: string[]): Promise<number[][]> {
   if (texts.length === 0) return [];
   if (texts.length === 1) {
-    return [await getOpenAIEmbedding(texts[0])];
+    return [await getOpenAIEmbedding(texts[0]!)];
   }
 
   const apiKey = getOpenAIApiKey();

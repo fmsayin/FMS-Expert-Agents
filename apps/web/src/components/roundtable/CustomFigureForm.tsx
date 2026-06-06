@@ -143,12 +143,13 @@ export function CustomFigureForm({
         setError(data.error ?? "Profile generation failed.");
         return;
       }
-      if (data.profile) {
+      const profile = data.profile;
+      if (profile) {
         setForm((prev) => ({
           ...prev,
-          ...data.profile,
-          fullName: data.profile.fullName || prev.fullName,
-          profileImageUrl: prev.profileImageUrl || data.profile.profileImageUrl,
+          ...profile,
+          fullName: profile.fullName || prev.fullName,
+          profileImageUrl: prev.profileImageUrl || profile.profileImageUrl,
         }));
       }
     } catch {
