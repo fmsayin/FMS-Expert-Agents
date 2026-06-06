@@ -1,4 +1,4 @@
-"""Generate favicon assets from the official FMS Think Tank header logo."""
+"""Generate favicon assets from the FMS Think Tank oval logo."""
 
 from __future__ import annotations
 
@@ -6,10 +6,12 @@ from pathlib import Path
 
 from PIL import Image
 
-WEB_DIR = Path(__file__).resolve().parents[1]
-SOURCE = WEB_DIR / "public" / "brand" / "fms-logo.png"
-APP_DIR = WEB_DIR / "app"
-PUBLIC_DIR = WEB_DIR / "public"
+SOURCE = Path(
+    r"C:\Users\fmsay\.cursor\projects\c-Users-fmsay-Documents-FMS-Expert-Agents\assets"
+    r"\c__Users_fmsay_AppData_Roaming_Cursor_User_workspaceStorage_c0161a26dcb83c6476d06b6ad8f84cbb_images_image-9df15170-7d1c-4f52-a49b-f73b08d6fd8f.png"
+)
+APP_DIR = Path(__file__).resolve().parents[1] / "app"
+PUBLIC_DIR = Path(__file__).resolve().parents[1] / "public"
 
 
 def fit_square(img: Image.Image, size: int, *, crop_box: tuple[int, int, int, int] | None = None) -> Image.Image:
@@ -27,9 +29,6 @@ def fit_square(img: Image.Image, size: int, *, crop_box: tuple[int, int, int, in
 
 
 def main() -> None:
-    if not SOURCE.is_file():
-        raise SystemExit(f"Source logo not found: {SOURCE}")
-
     source = Image.open(SOURCE).convert("RGBA")
     width, height = source.size
 
@@ -49,7 +48,6 @@ def main() -> None:
         (APP_DIR / "apple-icon.png", 180, None),
         (PUBLIC_DIR / "favicon-16x16.png", 16, small_crop),
         (PUBLIC_DIR / "favicon-32x32.png", 32, small_crop),
-        (PUBLIC_DIR / "favicon-48x48.png", 48, None),
         (PUBLIC_DIR / "apple-touch-icon.png", 180, None),
         (PUBLIC_DIR / "icon-192x192.png", 192, None),
         (PUBLIC_DIR / "icon-512x512.png", 512, None),

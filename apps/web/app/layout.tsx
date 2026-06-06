@@ -24,21 +24,18 @@ const libreBaskerville = Libre_Baskerville({
   variable: "--font-libre",
 });
 
-const FAVICON_VERSION = "2";
-
 export const metadata: Metadata = {
   title: "FMS Expert Agents",
   description: "Building Peace Through Intelligence, Diplomacy, and Human Dignity",
   icons: {
     icon: [
-      { url: `/favicon.ico?v=${FAVICON_VERSION}`, sizes: "any" },
-      { url: `/favicon-16x16.png?v=${FAVICON_VERSION}`, sizes: "16x16", type: "image/png" },
-      { url: `/favicon-32x32.png?v=${FAVICON_VERSION}`, sizes: "32x32", type: "image/png" },
-      { url: `/favicon-48x48.png?v=${FAVICON_VERSION}`, sizes: "48x48", type: "image/png" },
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
     ],
-    apple: `/apple-touch-icon.png?v=${FAVICON_VERSION}`,
+    apple: "/apple-touch-icon.png",
   },
-  manifest: `/site.webmanifest?v=${FAVICON_VERSION}`,
+  manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({
