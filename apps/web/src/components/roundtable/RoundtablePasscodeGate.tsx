@@ -6,6 +6,7 @@ import { LockKeyhole } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { apiFetch } from "@/lib/api-fetch";
 
 export function RoundtablePasscodeGate() {
   const router = useRouter();
@@ -19,7 +20,7 @@ export function RoundtablePasscodeGate() {
     setSubmitting(true);
 
     try {
-      const res = await fetch("/api/roundtable/unlock", {
+      const res = await apiFetch("/api/roundtable/unlock", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ passcode }),

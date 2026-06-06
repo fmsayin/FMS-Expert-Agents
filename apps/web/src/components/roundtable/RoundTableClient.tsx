@@ -33,6 +33,7 @@ import type {
 import { SAMPLE_DEBATE_MESSAGES } from "@/components/roundtable/sample-debate";
 import { SAMPLE_THINK_TANK_ANALYSIS } from "@/components/roundtable/sample-analysis";
 import { ROUNDTABLE_THEMES, themeToCssVars } from "@/components/roundtable/themes";
+import { apiFetch } from "@/lib/api-fetch";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { DEFAULT_ACTIVE_FIGURE_IDS } from "@/data/historical-figures";
@@ -124,7 +125,7 @@ async function fetchFigureReply(params: {
     }
   }
 
-  const res = await fetch("/api/roundtable/chat", {
+  const res = await apiFetch("/api/roundtable/chat", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(body),
@@ -149,7 +150,7 @@ async function fetchAnalysis(params: {
   topicFull: string;
   messages: RoundTableChatMessage[];
 }): Promise<ThinkTankAnalysis> {
-  const res = await fetch("/api/roundtable/analyze", {
+  const res = await apiFetch("/api/roundtable/analyze", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(params),
@@ -169,7 +170,7 @@ async function fetchTurkishSummary(params: {
   figureName: string;
   topicContext: string;
 }): Promise<{ summary: string; structured?: TurkishSummaryStructured }> {
-  const res = await fetch("/api/roundtable/turkish-summary", {
+  const res = await apiFetch("/api/roundtable/turkish-summary", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(params),
@@ -191,7 +192,7 @@ async function fetchTurkishReport(params: {
   topicFull: string;
   messages: RoundTableChatMessage[];
 }): Promise<TurkishExecutiveReport> {
-  const res = await fetch("/api/roundtable/turkish-report", {
+  const res = await apiFetch("/api/roundtable/turkish-report", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(params),

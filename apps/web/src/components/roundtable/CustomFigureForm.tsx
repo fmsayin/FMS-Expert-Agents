@@ -7,6 +7,7 @@ import {
   type CustomFigureEnrichment,
   type CustomFigureInput,
 } from "@/lib/custom-figures-storage";
+import { apiFetch } from "@/lib/api-fetch";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -124,7 +125,7 @@ export function CustomFigureForm({
     setError(null);
     setGenerating(true);
     try {
-      const res = await fetch("/api/roundtable/enrich-figure", {
+      const res = await apiFetch("/api/roundtable/enrich-figure", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

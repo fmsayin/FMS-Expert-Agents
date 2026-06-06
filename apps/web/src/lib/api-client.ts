@@ -4,6 +4,8 @@ import type {
   SessionSummary,
 } from "@fms/shared";
 
+import { apiFetch } from "@/lib/api-fetch";
+
 async function parseJson<T>(res: Response): Promise<T> {
   if (!res.ok) {
     const text = await res.text();
@@ -22,14 +24,14 @@ export async function listSessions(params?: {
   if (params?.cursor) q.set("cursor", params.cursor);
   if (params?.status) q.set("status", params.status);
   const suffix = q.toString() ? `?${q}` : "";
-  return parseJson(await fetch(`/api/sessions${suffix}`));
+  return parseJson(await apiFetch(`/api/sessions${suffix}`));
 }
 
 export async function createSession(
   body: CreateSessionBody,
 ): Promise<{ sessionId: string }> {
   const data = await parseJson<{ session: { id: string } }>(
-    await fetch("/api/sessions", {
+    await apiFetch("/api/sessions", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(body),
@@ -40,13 +42,13 @@ export async function createSession(
 
 export async function startSession(sessionId: string): Promise<void> {
   await parseJson(
-    await fetch(`/api/sessions/${sessionId}/run`, { method: "POST" }),
+    await apiFetch(`/api/sessions/${sessionId}/run`, { method: "POST" }),
   );
 }
 
 export async function getSession(sessionId: string): Promise<SessionDetail> {
   return parseJson(
-    await fetch(`/api/sessions/${sessionId}`, { cache: "no-store" }),
+    await apiFetch(`/api/sessions/${sessionId}`, { cache: "no-store" }),
   );
 }
 
@@ -63,7 +65,7 @@ export async function getDebate(sessionId: string): Promise<{
   sessionId: string;
   turns: DebateTurn[];
 }> {
-  return parseJson(await fetch(`/api/sessions/${sessionId}/debate`));
+  return parseJson(await apiFetch(`/api/sessions/${sessionId}/debate`));
 }
 
 export interface AgentAnalysis {
@@ -76,7 +78,7 @@ export async function getAnalyses(sessionId: string): Promise<{
   sessionId: string;
   analyses: AgentAnalysis[];
 }> {
-  return parseJson(await fetch(`/api/sessions/${sessionId}/analyses`));
+  return parseJson(await apiFetch(`/api/sessions/${sessionId}/analyses`));
 }
 
 export interface ConsensusDraft {
@@ -90,7 +92,7 @@ export interface ConsensusDraft {
 }
 
 export async function getConsensus(sessionId: string): Promise<{ draft: ConsensusDraft }> {
-  return parseJson(await fetch(`/api/sessions/${sessionId}/consensus`));
+  return parseJson(await apiFetch(`/api/sessions/${sessionId}/consensus`));
 }
 
 export interface SessionReport {
@@ -101,7 +103,7 @@ export interface SessionReport {
 }
 
 export async function getReport(sessionId: string): Promise<{ report: SessionReport }> {
-  return parseJson(await fetch(`/api/sessions/${sessionId}/report`));
+  return parseJson(await apiFetch(`/api/sessions/${sessionId}/report`));
 }
 
 export type StreamEvent =
