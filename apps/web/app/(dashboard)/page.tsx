@@ -7,7 +7,7 @@ import { AgentCard } from "@/components/agents/AgentCard";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Bot, BookOpen, FolderKanban, Users } from "lucide-react";
+import { Bot, BookOpen, FlaskConical, FolderKanban, Users } from "lucide-react";
 
 const FEATURED_SLUGS = [
   "chief-peace-architect",
@@ -21,39 +21,35 @@ export default function HomePage() {
     Boolean,
   ) as typeof AGENTS;
   const activeProjects = PROJECTS.filter((p) => p.status === "Active").length;
-  const recentOutputs = RESEARCH_OUTPUTS.filter((o) => !o.featured).slice(0, 3);
+  const recentOutputs = RESEARCH_OUTPUTS.filter((o) => !o.featured).slice(0, 4);
 
   return (
-    <div className="space-y-10">
-      <section className="relative overflow-hidden rounded-xl border border-gold/25 bg-gradient-to-br from-primary via-primary to-primary/85 p-8 text-primary-foreground shadow-lg md:p-10">
-        <div className="absolute right-0 top-0 h-32 w-32 rounded-full bg-gold/10 blur-3xl" aria-hidden />
-        <p className="text-xs font-semibold uppercase tracking-widest text-gold-light">
-          FMS Expert Agents
+    <div className="space-y-6">
+      <section className="platform-hero">
+        <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-primary">
+          Intelligence Center
         </p>
-        <h1 className="mt-2 max-w-3xl font-serif text-3xl font-semibold leading-tight tracking-tight md:text-4xl">
+        <h1 className="mt-2 max-w-3xl text-2xl font-semibold leading-tight tracking-tight md:text-3xl">
           {MISSION_STATEMENT}
         </h1>
-        <p className="mt-4 max-w-2xl text-sm leading-relaxed text-primary-foreground/85 md:text-base">
-          Institutional AI governance and peace & security think-tank platform. Convene
-          specialized expert agents for structured analysis, policy synthesis, and strategic
-          foresight.
+        <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+          Personal AI think-tank OS — convene expert agents, run policy lab sessions, and publish
+          research outputs.
         </p>
-        <div className="mt-8 flex flex-wrap gap-3">
-          <Button asChild size="lg" variant="secondary" className="bg-gold text-gold-dark hover:bg-gold/90">
-            <Link href="/agents">Browse expert agents</Link>
+        <div className="mt-5 flex flex-wrap gap-2">
+          <Button asChild size="default">
+            <Link href="/agents">Expert agents</Link>
           </Button>
-          <Button
-            asChild
-            size="lg"
-            variant="outline"
-            className="border-primary-foreground/30 bg-transparent text-primary-foreground hover:bg-primary-foreground/10"
-          >
-            <Link href="/outputs">View research outputs</Link>
+          <Button asChild size="default" variant="secondary">
+            <Link href="/sessions/new">New session</Link>
+          </Button>
+          <Button asChild size="default" variant="outline">
+            <Link href="/outputs">Research outputs</Link>
           </Button>
         </div>
       </section>
 
-      <section className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <section className="platform-stat-grid">
         {[
           {
             label: "Expert agents",
@@ -77,24 +73,24 @@ export default function HomePage() {
             icon: FolderKanban,
           },
           {
-            label: "Agent categories",
-            value: "7",
-            sub: "Governance to evidence",
-            href: "/agents",
-            icon: Users,
+            label: "Policy Lab",
+            value: "3",
+            sub: "Panels (preview)",
+            href: "/policy-lab",
+            icon: FlaskConical,
           },
         ].map((stat) => {
           const Icon = stat.icon;
           return (
             <Link key={stat.label} href={stat.href} className="group">
-              <Card className="h-full transition-shadow group-hover:shadow-md">
-                <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                  <CardDescription>{stat.label}</CardDescription>
-                  <Icon className="h-4 w-4 text-gold" aria-hidden />
+              <Card className="platform-card h-full transition-all group-hover:border-primary/30 group-hover:shadow-md">
+                <CardHeader className="flex flex-row items-center justify-between space-y-0 p-4 pb-1">
+                  <CardDescription className="text-xs">{stat.label}</CardDescription>
+                  <Icon className="h-4 w-4 text-primary" aria-hidden />
                 </CardHeader>
-                <CardContent>
-                  <p className="text-2xl font-semibold tabular-nums">{stat.value}</p>
-                  <p className="text-xs text-muted-foreground">{stat.sub}</p>
+                <CardContent className="p-4 pt-1">
+                  <p className="text-xl font-semibold tabular-nums">{stat.value}</p>
+                  <p className="text-[11px] text-muted-foreground">{stat.sub}</p>
                 </CardContent>
               </Card>
             </Link>
@@ -103,13 +99,13 @@ export default function HomePage() {
       </section>
 
       <section>
-        <div className="mb-4 flex items-center justify-between">
-          <h2 className="text-xl font-semibold">Featured expert agents</h2>
+        <div className="mb-3 flex items-center justify-between">
+          <h2 className="text-lg font-semibold">Featured expert agents</h2>
           <Button asChild variant="ghost" size="sm">
             <Link href="/agents">View all</Link>
           </Button>
         </div>
-        <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+        <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
           {featured.map((agent) => (
             <AgentCard key={agent.slug} agent={agent} />
           ))}
@@ -118,29 +114,31 @@ export default function HomePage() {
 
       {FEATURED_OUTPUT?.slug && (
         <section>
-          <div className="mb-4 flex items-center justify-between">
-            <h2 className="text-xl font-semibold">Featured research</h2>
+          <div className="mb-3 flex items-center justify-between">
+            <h2 className="text-lg font-semibold">Featured research</h2>
             <Button asChild variant="ghost" size="sm">
-              <Link href="/outputs">View all outputs</Link>
+              <Link href="/outputs">All outputs</Link>
             </Button>
           </div>
-          <Card className="border-gold/25 bg-gradient-to-r from-primary/5 to-gold/5">
-            <CardHeader>
+          <Card className="platform-card border-primary/20">
+            <CardHeader className="p-4 pb-2">
               <div className="flex items-center gap-2">
-                <Badge className="bg-gold text-gold-dark text-[10px]">Featured</Badge>
+                <Badge className="text-[10px]">Featured</Badge>
                 <Badge variant="outline" className="text-[10px]">
                   {FEATURED_OUTPUT.type}
                 </Badge>
               </div>
-              <CardTitle className="font-serif text-lg leading-snug">
+              <CardTitle className="mt-2 text-base leading-snug">
                 <Link href={`/outputs/${FEATURED_OUTPUT.slug}`} className="hover:text-primary">
                   {FEATURED_OUTPUT.title}
                 </Link>
               </CardTitle>
-              <CardDescription className="line-clamp-2">{FEATURED_OUTPUT.summary}</CardDescription>
+              <CardDescription className="line-clamp-2 text-sm">
+                {FEATURED_OUTPUT.summary}
+              </CardDescription>
             </CardHeader>
-            <CardContent>
-              <Button asChild size="sm" variant="outline">
+            <CardContent className="p-4 pt-0">
+              <Button asChild size="sm">
                 <Link href={`/outputs/${FEATURED_OUTPUT.slug}`}>Read article</Link>
               </Button>
             </CardContent>
@@ -148,41 +146,52 @@ export default function HomePage() {
         </section>
       )}
 
-      <section>
-        <div className="mb-4 flex items-center justify-between">
-          <h2 className="text-xl font-semibold">Recent research outputs</h2>
-          <Button asChild variant="ghost" size="sm">
-            <Link href="/outputs">View all</Link>
-          </Button>
+      <section className="grid gap-4 lg:grid-cols-[1fr_auto]">
+        <div>
+          <div className="mb-3 flex items-center justify-between">
+            <h2 className="text-lg font-semibold">Recent outputs</h2>
+            <Button asChild variant="ghost" size="sm">
+              <Link href="/outputs">View all</Link>
+            </Button>
+          </div>
+          <ul className="grid gap-2 md:grid-cols-2">
+            {recentOutputs.map((output) => (
+              <li key={output.id}>
+                <Card className="platform-card h-full">
+                  <CardHeader className="p-3 pb-1">
+                    <div className="flex items-center gap-2">
+                      <Badge variant="outline" className="text-[10px]">
+                        {output.type}
+                      </Badge>
+                      <span className="text-[10px] text-muted-foreground">{output.date}</span>
+                    </div>
+                    <CardTitle className="mt-1 text-sm leading-snug">
+                      {output.slug ? (
+                        <Link href={`/outputs/${output.slug}`} className="hover:text-primary">
+                          {output.title}
+                        </Link>
+                      ) : (
+                        output.title
+                      )}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="line-clamp-2 p-3 pt-0 text-xs text-muted-foreground">
+                    {output.summary}
+                  </CardContent>
+                </Card>
+              </li>
+            ))}
+          </ul>
         </div>
-        <ul className="grid gap-3 md:grid-cols-2">
-          {recentOutputs.map((output) => (
-            <li key={output.id}>
-              <Card>
-                <CardHeader className="pb-2">
-                  <div className="flex items-center gap-2">
-                    <Badge variant="outline" className="text-[10px]">
-                      {output.type}
-                    </Badge>
-                    <span className="text-xs text-muted-foreground">{output.date}</span>
-                  </div>
-                  <CardTitle className="text-base leading-snug">
-                    {output.slug ? (
-                      <Link href={`/outputs/${output.slug}`} className="hover:text-primary">
-                        {output.title}
-                      </Link>
-                    ) : (
-                      output.title
-                    )}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="line-clamp-2 text-sm text-muted-foreground">
-                  {output.summary}
-                </CardContent>
-              </Card>
-            </li>
-          ))}
-        </ul>
+        <Card className="platform-card flex h-fit flex-col gap-3 p-4 lg:min-w-[220px]">
+          <h3 className="text-sm font-semibold">Quick actions</h3>
+          <Button asChild size="sm" className="w-full justify-start">
+            <Link href="/policy-lab">
+              <Users className="mr-2 h-4 w-4" aria-hidden />
+              Policy Lab
+            </Link>
+          </Button>
+        </Card>
       </section>
     </div>
   );

@@ -1,0 +1,209 @@
+/* Editorial defaults for in-page and portaled roundtable UI (--rt-* synced on theme change) */
+[data-workspace="roundtable"],
+html:has([data-workspace="roundtable"]) {
+  --rt-bg: #f4ead5;
+  --rt-surface: #ebe0c8;
+  --rt-border: #c4a574;
+  --rt-text: #1a1208;
+  --rt-muted: #6b5c3e;
+  --rt-accent: #8b6914;
+  --rt-font-head: var(--font-playfair), "Playfair Display", Georgia, serif;
+  --rt-font-body: var(--font-serif), "Source Serif 4", Georgia, serif;
+}
+
+/* Shell accents when browsing Historical Round Table routes */
+[data-workspace="roundtable"] {
+  --background: 38 35% 94%;
+  --foreground: 30 25% 12%;
+  --card: 40 30% 96%;
+  --card-foreground: 30 25% 12%;
+  --primary: 32 55% 38%;
+  --primary-foreground: 40 30% 96%;
+  --secondary: 38 25% 90%;
+  --secondary-foreground: 30 25% 12%;
+  --muted: 38 20% 88%;
+  --muted-foreground: 30 15% 42%;
+  --accent: 38 70% 42%;
+  --accent-foreground: 40 30% 96%;
+  --sidebar: 38 32% 92%;
+  --border: 35 28% 78%;
+  --input: 35 28% 78%;
+  --ring: 32 55% 38%;
+}
+
+[data-workspace="roundtable"] main {
+  @apply bg-[hsl(38_35%_94%)] p-3 md:p-5;
+}
+
+/* ── Historical Round Table: transcript-first hierarchy ── */
+
+[data-theme="roundtable"] .rt-controls-zone {
+  background-color: color-mix(in srgb, var(--rt-surface) 55%, transparent);
+  border-color: color-mix(in srgb, var(--rt-border) 65%, transparent);
+}
+
+[data-theme="roundtable"] .rt-participants {
+  border-color: color-mix(in srgb, var(--rt-border) 65%, transparent);
+}
+
+[data-theme="roundtable"] .rt-transcript-stage {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0.5rem 0.5rem;
+}
+
+@media (min-width: 768px) {
+  [data-theme="roundtable"] .rt-transcript-stage {
+    padding: 0.125rem 0.75rem 0.625rem;
+  }
+}
+
+[data-theme="roundtable"] .rt-transcript-panel {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  border: 1px solid color-mix(in srgb, var(--rt-border) 85%, var(--rt-accent));
+  background-color: color-mix(in srgb, var(--rt-bg) 55%, #faf6ec);
+  box-shadow:
+    inset 0 2px 12px color-mix(in srgb, var(--rt-border) 18%, transparent),
+    inset 0 0 0 1px color-mix(in srgb, #fff 35%, transparent),
+    0 1px 2px color-mix(in srgb, var(--rt-border) 12%, transparent);
+}
+
+[data-theme="roundtable"] .rt-transcript-panel [data-radix-scroll-area-viewport] {
+  min-height: 50vh;
+}
+
+[data-theme="roundtable"] .rt-debate-feed {
+  gap: 1rem;
+  padding: 0.375rem 1rem 1.25rem;
+  max-width: none;
+}
+
+@media (min-width: 768px) {
+  [data-theme="roundtable"] .rt-debate-feed {
+    gap: 1.125rem;
+    padding: 0.5rem 1.25rem 1.5rem;
+  }
+}
+
+[data-theme="roundtable"] .rt-transcript-row blockquote {
+  font-size: 0.9375rem;
+  line-height: 1.65;
+}
+
+/* Moderator interjections — distinct from figure transcript rows */
+[data-theme="roundtable"] .rt-moderator-block {
+  margin-block: 0.375rem;
+}
+
+[data-theme="roundtable"] .rt-moderator-rule {
+  flex-shrink: 0;
+  background-color: color-mix(in srgb, var(--rt-border) 55%, transparent);
+  opacity: 0.65;
+}
+
+[data-theme="roundtable"] .rt-moderator-block .rt-moderator-rule:first-child {
+  margin-bottom: 0.875rem;
+}
+
+[data-theme="roundtable"] .rt-moderator-block .rt-moderator-rule:last-child {
+  margin-top: 0.875rem;
+}
+
+[data-theme="roundtable"] .rt-moderator-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.375rem;
+  border: 1px solid color-mix(in srgb, var(--rt-accent) 30%, var(--rt-border));
+  padding: 0.875rem 1rem 1rem 1.125rem;
+  background-color: color-mix(in srgb, var(--rt-accent) 10%, var(--rt-surface));
+  background-image: linear-gradient(
+    165deg,
+    color-mix(in srgb, #faf6ec 55%, var(--rt-surface)) 0%,
+    color-mix(in srgb, var(--rt-accent) 7%, var(--rt-surface)) 100%
+  );
+  box-shadow:
+    inset 0 1px 0 color-mix(in srgb, #fff 32%, transparent),
+    inset 0 2px 10px color-mix(in srgb, var(--rt-accent) 8%, transparent),
+    0 1px 4px color-mix(in srgb, var(--rt-border) 16%, transparent);
+}
+
+[data-theme="roundtable"] .rt-moderator-accent {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, #c9a227 55%, var(--rt-accent)),
+    color-mix(in srgb, var(--rt-accent) 75%, var(--rt-border))
+  );
+  border-radius: 2px 0 0 2px;
+}
+
+[data-theme="roundtable"] .rt-moderator-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.625rem;
+}
+
+[data-theme="roundtable"] .rt-moderator-icon {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.125rem;
+  border: 1px solid color-mix(in srgb, var(--rt-accent) 35%, var(--rt-border));
+  background-color: color-mix(in srgb, var(--rt-accent) 12%, var(--rt-bg));
+  color: var(--rt-accent);
+  box-shadow: inset 0 1px 0 color-mix(in srgb, #fff 25%, transparent);
+}
+
+[data-theme="roundtable"] .rt-moderator-label {
+  font-family: var(--rt-font-head);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  font-variant: small-caps;
+  letter-spacing: 0.22em;
+  line-height: 1.2;
+  color: var(--rt-accent);
+}
+
+[data-theme="roundtable"] .rt-moderator-body {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: var(--rt-font-body);
+  font-size: 1rem;
+  font-style: italic;
+  line-height: 1.7;
+  color: var(--rt-text);
+}
+
+[data-theme="roundtable"] .rt-transcript-row header p:first-child {
+  font-size: 0.875rem;
+}
+
+[data-theme="roundtable"] .rt-preview-label {
+  font-size: 0.625rem;
+  letter-spacing: 0.14em;
+  color: color-mix(in srgb, var(--rt-muted) 85%, var(--rt-accent));
+}
+
+[data-theme="roundtable"] .rt-onboarding-empty h3 {
+  font-size: 1rem;
+}
+
+[data-theme="roundtable"] .rt-onboarding-empty p {
+  font-size: 0.75rem;
+  line-height: 1.5;
+}

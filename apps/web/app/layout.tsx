@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Source_Serif_4 } from "next/font/google";
+import { Inter, Libre_Baskerville, Playfair_Display, Source_Serif_4 } from "next/font/google";
 import { Toaster } from "sonner";
 import "./globals.css";
 
@@ -13,6 +13,17 @@ const sourceSerif = Source_Serif_4({
   variable: "--font-serif",
 });
 
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair",
+});
+
+const libreBaskerville = Libre_Baskerville({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-libre",
+});
+
 export const metadata: Metadata = {
   title: "FMS Expert Agents",
   description: "Building Peace Through Intelligence, Diplomacy, and Human Dignity",
@@ -24,7 +35,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${sourceSerif.variable}`}>
+    <html
+      lang="en"
+      className={`${inter.variable} ${sourceSerif.variable} ${playfair.variable} ${libreBaskerville.variable}`}
+    >
       <body className="min-h-screen font-sans antialiased">
         {children}
         <Toaster position="top-right" richColors closeButton />
