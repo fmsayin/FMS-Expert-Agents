@@ -8,10 +8,22 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { apiFetch } from "@/lib/api-fetch";
 
-export function RoundtablePasscodeGate() {
+const EMBED_ERROR_MESSAGES: Record<string, string> = {
+  config: "Round Table embed access is not configured. Use the passcode or contact an administrator.",
+  referer: "This embed link must be opened from the FMS Think Tank agents page.",
+  invalid: "Your embed session expired or is invalid. Sign in again at fmsthinktank.org/agents.",
+};
+
+type RoundtablePasscodeGateProps = {
+  embedError?: string;
+};
+
+export function RoundtablePasscodeGate({ embedError }: RoundtablePasscodeGateProps) {
   const router = useRouter();
   const [passcode, setPasscode] = useState("");
-  const [error, setError] = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(
+    embedError ? (EMBED_ERROR_MESSAGES[embedError] ?? "Unable to verify embed access.") : null,
+  );
   const [submitting, setSubmitting] = useState(false);
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {

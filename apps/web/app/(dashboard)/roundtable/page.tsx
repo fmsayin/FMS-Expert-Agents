@@ -1,17 +1,12 @@
-import { cookies, headers } from "next/headers";
 import { redirect } from "next/navigation";
 
 import { RoundTableClient } from "@/components/roundtable/RoundTableClient";
 import { RoundtablePasscodeGate } from "@/components/roundtable/RoundtablePasscodeGate";
-import { isAllowedEmbedReferer, verifyEmbedToken } from "@/lib/embed-token";
-import {
-  createRoundtableAccessToken,
-  hasRoundtableAccess,
-  roundtableAccessCookieOptions,
-} from "@/lib/roundtable-access-server";
+import { withBasePath } from "@/lib/base-path";
+import { hasRoundtableAccess } from "@/lib/roundtable-access-server";
 
 type RoundTablePageProps = {
-  searchParams: Promise<{ embed_token?: string }>;
+  searchParams: Promise<{ embed_token?: string; embed_error?: string }>;
 };
 
 export default async function RoundTablePage({ searchParams }: RoundTablePageProps) {
@@ -19,23 +14,14 @@ export default async function RoundTablePage({ searchParams }: RoundTablePagePro
   const embedToken = params.embed_token?.trim();
 
   if (embedToken && !(await hasRoundtableAccess())) {
-    const requestHeaders = await headers();
-    const referer = requestHeaders.get("referer");
-
-    if (
-      isAllowedEmbedReferer(referer) &&
-      (await verifyEmbedToken(embedToken))
-    ) {
-      const accessToken = await createRoundtableAccessToken();
-      const cookieStore = await cookies();
-      cookieStore.set(roundtableAccessCookieOptions(accessToken));
-      redirect("/roundtable");
-    }
+    redirect(
+      `${withBasePath("/api/roundtable/embed")}?embed_token=${encodeURIComponent(embedToken)}`,
+    );
   }
 
   const allowed = await hasRoundtableAccess();
   if (!allowed) {
-    return <RoundtablePasscodeGate />;
+    return <RoundtablePasscodeGate embedError={params.embed_error} />;
   }
   return <RoundTableClient />;
 }

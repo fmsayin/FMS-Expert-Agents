@@ -14,7 +14,12 @@ import {
 } from "@/lib/roundtable-access";
 
 const PUBLIC_PATHS = new Set(["/login", "/sign-in", "/sign-up"]);
-const PUBLIC_API_PATHS = new Set(["/api/platform/login", "/api/health", "/api/roundtable/unlock"]);
+const PUBLIC_API_PATHS = new Set([
+  "/api/platform/login",
+  "/api/health",
+  "/api/roundtable/unlock",
+  "/api/roundtable/embed",
+]);
 
 function isPublicPath(pathname: string): boolean {
   if (PUBLIC_PATHS.has(pathname)) return true;
@@ -42,9 +47,10 @@ export async function middleware(request: NextRequest) {
 
   if (isRoundtableProtectionEnabled()) {
     const isRoundtableApi = pathname.startsWith("/api/roundtable/");
-    const isUnlockApi = pathname === "/api/roundtable/unlock";
+    const isPublicRoundtableApi =
+      pathname === "/api/roundtable/unlock" || pathname === "/api/roundtable/embed";
 
-    if (isRoundtableApi && !isUnlockApi) {
+    if (isRoundtableApi && !isPublicRoundtableApi) {
       const token = request.cookies.get(ROUNDTABLE_COOKIE_NAME)?.value;
       if (!(await verifyRoundtableAccessToken(token))) {
         return NextResponse.json({ error: "Roundtable access required." }, { status: 401 });
