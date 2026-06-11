@@ -48,3 +48,12 @@ Other scripts: `pnpm build`, `pnpm lint`, `pnpm typecheck`.
 ## Design
 
 Navy/charcoal/slate palette with gold accent (`app/globals.css`, `tailwind.config.ts`). Responsive: desktop sidebar, mobile hamburger menu, 2-column tablet agent grid.
+
+## Historical Round Table embed (fmsthinktank.org/agents)
+
+Authenticated users on [fmsthinktank.org/agents](https://fmsthinktank.org/agents) receive a short-lived signed `embed_token` from FMS Think Tank. The iframe loads `/roundtable?embed_token=...`; the server validates the HMAC, sets the `fms-rt-access` cookie, and redirects to `/roundtable`. Direct visits to `/roundtable` still require `ROUNDTABLE_PASSCODE`.
+
+| Variable | Purpose |
+|----------|---------|
+| `ROUNDTABLE_PASSCODE` | Passcode gate for direct `/roundtable` access |
+| `ROUNDTABLE_ACCESS_SECRET` | Shared HMAC secret for embed tokens (must match FMS Think Tank) and signed access cookies |

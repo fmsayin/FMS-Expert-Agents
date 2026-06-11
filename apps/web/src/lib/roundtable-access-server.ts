@@ -4,10 +4,13 @@ import { cookies } from "next/headers";
 
 import {
   ROUNDTABLE_COOKIE_NAME,
+  createRoundtableAccessToken,
   getRoundtableSessionMaxAge,
   isRoundtableProtectionEnabled,
   verifyRoundtableAccessToken,
 } from "@/lib/roundtable-access";
+
+export { createRoundtableAccessToken };
 
 export async function hasRoundtableAccess(): Promise<boolean> {
   if (!isRoundtableProtectionEnabled()) return true;
