@@ -19,14 +19,26 @@ export async function hasRoundtableAccess(): Promise<boolean> {
   return verifyRoundtableAccessToken(token);
 }
 
-export function roundtableAccessCookieOptions(token: string) {
+type RoundtableCookieOptions = {
+  crossSite?: boolean;
+};
+
+export function roundtableAccessCookieOptions(token: string, options?: RoundtableCookieOptions) {
+  const crossSite = options?.crossSite ?? false;
+
   return {
     name: ROUNDTABLE_COOKIE_NAME,
     value: token,
     httpOnly: true,
-    secure: process.env.NODE_ENV === "production",
-    sameSite: "lax" as const,
+    secure: crossSite || process.env.NODE_ENV === "production",
+    sameSite: (crossSite ? "none" : "lax") as "lax" | "none",
     path: "/",
     maxAge: getRoundtableSessionMaxAge(),
+    ...(crossSite ? { partitioned: true as const } : {}),
   };
+}
+
+/** Cross-site iframe cookie (Think Tank → Expert Agents embed). */
+export function roundtableEmbedAccessCookieOptions(token: string) {
+  return roundtableAccessCookieOptions(token, { crossSite: true });
 }

@@ -22,13 +22,19 @@ export function getEmbedTokenSecret(): string | undefined {
   return process.env.ROUNDTABLE_ACCESS_SECRET?.trim() || undefined;
 }
 
-export function isAllowedEmbedReferer(referer: string | null): boolean {
+export function isAllowedEmbedReferer(
+  referer: string | null,
+  requestOrigin?: string,
+): boolean {
   if (!referer) {
     return true;
   }
 
   try {
     const origin = new URL(referer).origin;
+    if (requestOrigin && origin === requestOrigin) {
+      return true;
+    }
     return ALLOWED_EMBED_REFERER_ORIGINS.has(origin);
   } catch {
     return false;

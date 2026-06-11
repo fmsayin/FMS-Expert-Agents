@@ -1,9 +1,9 @@
 import { NextResponse } from "next/server";
 
 import { withBasePath } from "@/lib/base-path";
-import { getEmbedTokenSecret, isAllowedEmbedReferer, verifyEmbedToken } from "@/lib/embed-token";
+import { getEmbedTokenSecret, verifyEmbedToken } from "@/lib/embed-token";
 import { createRoundtableAccessToken } from "@/lib/roundtable-access";
-import { roundtableAccessCookieOptions } from "@/lib/roundtable-access-server";
+import { roundtableEmbedAccessCookieOptions } from "@/lib/roundtable-access-server";
 
 export async function GET(request: Request) {
   const url = new URL(request.url);
@@ -19,13 +19,6 @@ export async function GET(request: Request) {
     return NextResponse.redirect(roundtableUrl);
   }
 
-  const referer = request.headers.get("referer");
-  if (!isAllowedEmbedReferer(referer)) {
-    const roundtableUrl = new URL(withBasePath("/roundtable"), request.url);
-    roundtableUrl.searchParams.set("embed_error", "referer");
-    return NextResponse.redirect(roundtableUrl);
-  }
-
   if (!(await verifyEmbedToken(embedToken))) {
     const roundtableUrl = new URL(withBasePath("/roundtable"), request.url);
     roundtableUrl.searchParams.set("embed_error", "invalid");
@@ -34,7 +27,7 @@ export async function GET(request: Request) {
 
   const accessToken = await createRoundtableAccessToken();
   const response = NextResponse.redirect(new URL(withBasePath("/roundtable"), request.url));
-  const cookie = roundtableAccessCookieOptions(accessToken);
+  const cookie = roundtableEmbedAccessCookieOptions(accessToken);
   response.cookies.set(cookie.name, cookie.value, {
     httpOnly: cookie.httpOnly,
     secure: cookie.secure,
