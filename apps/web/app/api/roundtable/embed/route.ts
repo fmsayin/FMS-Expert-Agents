@@ -34,6 +34,7 @@ export async function GET(request: Request) {
     sameSite: cookie.sameSite,
     path: cookie.path,
     maxAge: cookie.maxAge,
+    ...(cookie.partitioned ? { partitioned: true } : {}),
   });
 
   return response;
